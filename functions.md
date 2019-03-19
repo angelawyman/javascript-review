@@ -5,18 +5,21 @@
 ## MODULE 4: Functions
 
 ***
-
+Reference: <https://www.w3schools.com/js/js_functions.asp>
 
 ### JavaScript Functions
 
 A JavaScript function is a block of code designed to perform a particular task. The main advantages of using functions:
 is you can use the same code many times with different arguments, to produce different results.
 
-A JavaScript function is executed when "something" invokes, or calls, it.
+A JavaScript function is executed when "something" invokes, or calls, the function.
+* When an event occurs (when a user clicks a button)
+* When it is invoked (called) from JavaScript code
+* Automatically (self invoked)
 
 ### User-Defined Functions
 
-To define a JavaScript function, use the function keyword, followed by a name, followed by a set of parentheses ().
+To define a JavaScript function, use the function keyword, followed by a name, followed by a set of parentheses (). You name functions much like you name variables, names can contain letters, digits, underscores, and dollar signs.
 
 *Syntax*
 
@@ -24,7 +27,9 @@ To define a JavaScript function, use the function keyword, followed by a name, f
 `  //code to be executed`<br/>
 `}`
 
-Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).
+* Function parameters are listed inside the parentheses () in the function definition.
+* Function arguments are the values received by the function when it is invoked.
+* Inside the function, the arguments (the parameters) behave as local variables.
 
 **Calling a Function**
 
@@ -41,8 +46,21 @@ To call a function, start with the name of the function, then follow it with the
 
 Once the function is defined, JavaScript allows you to call it as many times as you want to.
 
-You can also call a function using this syntax: myFunction.call(). The difference is that when calling in this way, you're passing the 'this' keyword to a function. You'll learn about it later.
+You can also call a function using this syntax
 
+`myFunction.call();`
+
+The difference is that when calling in this way, you're passing the 'this' keyword to a function. You'll learn about it later.
+
+## Return Value
+
+Functions often compute a return value. The return value is "returned" back to the "caller":
+
+`var x = myFunction(4, 3);`   
+
+`function myFunction(a, b) {`<br/>
+`  return a * b;`<br/>
+`}`
 
 ### Function Parameters
 
