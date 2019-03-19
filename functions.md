@@ -20,8 +20,8 @@ To define a JavaScript function, use the function keyword, followed by a name, f
 
 *Syntax*
 
-`function name() { `<br/>
-`  //code to be executed`<br/>
+`function name() { `<br/>
+`  //code to be executed`<br/>
 `}`
 
 Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).
@@ -158,14 +158,15 @@ Note: if you do not return anything from a function, it will return undefined.
 `document.write( addNumbers(40, 2) );`<br/>
 `//Outputs 42`<br/>
 
-### Alert Prompt Confirm
+### Using Alert, Prompt and Confirm
+
+>alert("Do you really want to leave this page?"); 
 
 ** Alert Box 
 An alert box is used when you want to ensure that information gets through to the user.
 When an alert box pops up, the user must click OK to proceed.
 The alert function takes a single parameter, which is the text displayed in the popup box.
 
->alert("Do you really want to leave this page?"); 
 
 ** Prompt Box 
 is often used to have the user input a value before entering a page.
