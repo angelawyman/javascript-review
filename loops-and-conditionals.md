@@ -3,7 +3,7 @@
 
 ***
 
-# Conditionals and Loops
+## MODULE 3: Conditionals and Loops
 
 ***
 
@@ -45,6 +45,7 @@ Use if to specify a block of code that will be executed if a specified condition
 
 
 *example*
+
 `var age = 25;`<br/>
 `if (age >= 18) {`<br/>
 `   alert("Allowed.");`<br/>
@@ -210,6 +211,7 @@ Statement 3 is also optional, and it can be omitted if you increment your values
 `   i += k;`<br/>
 `   document.write(i++"<br />");`<br/>
 `}`
+
 
 ### The while loop
 
