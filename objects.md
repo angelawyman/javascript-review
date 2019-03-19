@@ -3,7 +3,7 @@
 
 ***
 
-# Objects
+## MODULE 5: Objects
 
 ***
 
@@ -20,8 +20,7 @@ Let us take a real life example of an object, say, a siamese.
 The properties of the object cat can include that he has legs = 4, color = "lilac-point", eyes = "blue", ears = 2, etc. 
 
 The methods of our object can include things the cat can do, such as meow(), drink(), eat(), sleep(), etc. 
-
-So for practical purposes, methods are actions of an object, while properties are innate features of it.
+So for practical purposes, methods are actions of an object, while properties are innate features of it. Methods are basically a function of an object, it can only be called on an object.
 
 *example*
 
