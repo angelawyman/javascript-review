@@ -5,16 +5,16 @@
 
 # INTRODUCTION
 
-**1.) What is JavaScript?**
-A. JavaScript is used only for web apps
-*B. You can use JavaScript to create interactive web elements*
+**1.) What is JavaScript?**<br/>
+A. JavaScript is used only for web apps<br/>
+*B. You can use JavaScript to create interactive web elements*<br/>
 C. JavaScript is a server-side only language
 
 **2. What tag contains the JavaScript code?**
-A. body
-*B. script*
-C. style
-D. code
+A. body<br/>
+*B. script*<br/>
+C. style<br/>
+D. code<br/>
 
 >Don't write this (deprecated):
 `<script language="javascript" type="text/javascript">`
