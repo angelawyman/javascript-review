@@ -190,7 +190,7 @@ Using const allows you to define a variables that cannot be changed to new value
 `// As we're not changing the object person this works.`
 
 
-#### All Uppercase constants
+#### All Uppercase Constants
 There is a widespread practice to use constants as aliases for difficult-to-remember values that are known prior to execution. Such constants are named using capital letters and underscores.
 
 *example*
@@ -281,7 +281,7 @@ The Boolean value of 0 (zero), null, undefined, empty string is false. Everythin
 
 Modulus (%) operator returns the division remainder (what is left over).
 
-- Assignment Operators
+### Assignment Operators
 `=, +=, -=, *=, /=, %=`
 
 `var result= 20;`<br/>
