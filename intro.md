@@ -1,6 +1,12 @@
 ***
 
-# Introduction
+# Introduction to JavaScript - Review
+
+-Auto-update content, like twitter or facebook feed  🐋
+-Animate visual elements 🐈
+-Add visual feedback on user interactions ✅
+-Add interactive maps 🚀
+-Trigger pop-ups/offers after user actions, such as modal windows
 
 **1.) What is JavaScript?**<br/>
 A. JavaScript is used only for web apps<br/>
@@ -210,19 +216,19 @@ Variables should be named in a way that allows us to easily understand what’s 
 ***
 ## Exercises: Working with variables
 
-Exercise 1
+**Exercise 1**
 1. Declare two variables: admin and name.
 2. Assign the value "John" to name.
 3. Copy the value from name to admin.
 4. Show the value of admin using alert (must output “John”).
 
 
-Exercise 2 - Giving the right name
+**Exercise 2 - Giving the right name**
 1. Create a variable with the name of our planet. How would you name such a variable?
 2. Create a variable to store the name of a current visitor to a website. How would you name that variable?
 
 
-Exercise 3 - Uppercase const
+**Exercise 3 - Uppercase const**
 
 1. Examine the following code:
 
@@ -238,7 +244,7 @@ Q. Would it be right to use upper case for birthday? For age? Or even for both?
 
 ### Data Types
 
-Data type refers to the type of values a program can accept. JavaScript variables can hold many data types, such as numbers, strings, arrays, and more. There are eight data types in JavaScript. Six of them are called “primitive”, because their values contain only a single thing. Symbol is new to  ECMAScript 6 and Null and Undefined are also data types.
+Data type refers to the type of values a program can accept. JavaScript variables can hold many data types, such as numbers, strings, arrays, and more.  Six of the data types are called “primitive”, because their values contain only a single thing. Symbol is new to  ECMAScript 6, Null and Undefined are also data types.
 (By contrast, objects are used to store keyed collections of various data.)
 
 `let x;`<br/>
@@ -258,10 +264,10 @@ Or you can escape your quotes like this for double quotes: \" or \' inside of si
 `var sayHello = 'Hello world! \'I am a JavaScript programmer.\' ';`<br/>
 `document.write(sayHello);`
 
-- Booleans - True or False
+### Booleans - True or False
 The Boolean value of 0 (zero), null, undefined, empty string is false. Everything with a "real" value is true.
 
-- Arithmetic Operators
+### Arithmetic Operators
 `+, -, *, /, %, ++, --`
 
 *example*
@@ -280,7 +286,7 @@ Modulus (%) operator returns the division remainder (what is left over).
 
 `answer: 100;`
 
-- Comparison Operators
+### Comparison Operators
 `==, ===, !=, !==, >, >=, <, <=`
 
 Comparison operators are used in logical statements to determine equality or difference between variables or values and  they always return true or false.
@@ -294,16 +300,16 @@ Comparison operators are used in logical statements to determine equality or dif
  `10<5 false - less than`
  `10<=5 false - less than or equal to`
 
-- Logic Operators
+### Logic Operators
 `&&, !!, ! ` = and, or, not
 
 Logical operators allow you to connect as many expressions as you wish.
 
--Conditional Ternary Operator
+### Conditional Ternary Operator
 
 `var isAdult = (age < 18) ? "Too young": "Old enough";`
 
--String Operators
+### String Operators
 The most useful operator for strings is concatenation, represented by the + sign. 
 Concatenation can be used to build strings by joining together multiple strings, or by joining strings with other types: 
 
@@ -313,7 +319,9 @@ Concatenation can be used to build strings by joining together multiple strings,
 
 Numbers in quotes are treated as strings: "42" is not the number 42, it is a string that includes two characters, 4 and 2.
 
-What is the output of the following code:
+***
+**Exercise 4**
+What is the output of the following code?
 
 `var x = "50";`<br/>
 `var y = "100";`<br/>
