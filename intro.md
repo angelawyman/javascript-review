@@ -206,8 +206,6 @@ Variables should be named in a way that allows us to easily understand what’s 
 4. Show the value of admin using alert (must output “John”).
 
 
-
-
 ### Data Types
 
 Data type refers to the type of values a program can accept. JavaScript variables can hold many data types, such as numbers, strings, arrays, and more. There are eight data types in JavaScript. Six of them are called “primitive”, because their values contain only a single thing. Symbol is new to  ECMAScript 6 and Null and Undefined are also data types.
@@ -223,13 +221,13 @@ x = true // is Boolean
 - Floating point numbers can have decimal points.
 
 - Strings store text. Be sure to match your quotes.
-var text = "My name is 'John' ";
+`var text = "My name is 'John' ";`
 
-Or you can escape your quotes like this for doubkle quotes: 
+Or you can escape your quotes like this for double quotes: 
 \" or \' inside of single quotes.
 
-var sayHello = 'Hello world! \'I am a JavaScript programmer.\' ';
-document.write(sayHello);
+`var sayHello = 'Hello world! \'I am a JavaScript programmer.\' ';
+document.write(sayHello);`
 
 - Booleans - True or False
 The Boolean value of 0 (zero), null, undefined, empty string is false. Everything with a "real" value is true.
@@ -280,7 +278,6 @@ Conditional Ternary Operator
 -String Operators
 The most useful operator for strings is concatenation, represented by the + sign. 
 Concatenation can be used to build strings by joining together multiple strings, or by joining strings with other types: 
-
 
 `var mystring1 = "I am learning ";
 var mystring2 = "JavaScript with SoloLearn.";
