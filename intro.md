@@ -1,7 +1,7 @@
 ***
 
 # Introduction to JavaScript - Review
-# Module 1: Overview
+## MODULE 1: Overview
 ***
 * Auto-update content, like twitter or facebook feed  🐋
 * Animate visual elements 🐈
@@ -98,7 +98,7 @@ Multiple line comments use slash star and star slash pairings
 `D. %%this is a comment`<br/>`
 
 ***
-## MODULE 2 BASIC CONCEPTS
+## MODULE 2: Basic Concepts
 
 * Variables
 * Data Types
