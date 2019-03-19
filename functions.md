@@ -38,17 +38,17 @@ To call a function, start with the name of the function, then follow it with the
 
 *example*
 
-`function myPizzaOrder() {`<br/>
-`  alert("Calling a Function!");`<br/>
+`function myVeganPizzaOrder() {`<br/>
+`  alert("Did you want toppings?");`<br/>
 `}`<br/>
-`myPizzaOrder();`<br/>
-`//Alerts "Calling a Function!"`
+`myVeganPizzaOrder();`<br/>
+`// alerts "Did you want toppings?"`
 
 Once the function is defined, JavaScript allows you to call it as many times as you want to.
 
 You can also call a function using this syntax
 
-`myFunction.call();`
+`myBestFunction.call();`
 
 The difference is that when calling in this way, you're passing the 'this' keyword to a function. You'll learn about it later.
 
@@ -82,9 +82,9 @@ This function takes in a parameter called name. When calling the function, provi
 `function sayHello(name) {`<br/>
 `   alert("Hi, " + name);`<br/>
 `}`<br/>
-`sayHello("David");`<br/>
-`sayHello("Sarah");`<br/>
-`sayHello("John");`<br/>
+`sayHello("Raoul");`<br/>
+`sayHello("Mona");`<br/>
+`sayHello("Chiquita");`<br/>
 
 This will execute the function's code each time for the provided argument.
 
@@ -126,8 +126,8 @@ Q.) What is the output of this code?
 `  document.write( name + " is " + age + " years old.");`<br/>
 `}`
 
-`sayHello("John", 20)`<br/>
-`//Outputs "John is 20 years old."`
+`sayHello("Chiquita", 20)`<br/>
+`// outputs "Chiquita is 20 years old."`
 
 If you pass more arguments than are defined, they will be assigned to an array called arguments. They can be used like this: arguments[0], arguments[1], etc.
 
@@ -136,16 +136,16 @@ If you pass more arguments than are defined, they will be assigned to an array c
 `function sayHello(name, age) {`<br/>
 `    document.write( arguments[0] + " is " + arguments[1] + " years old and live in " + arguments[2]);`<br/>
 `}`<br/>
-`sayHello("John", 20, "California");`<br/>
-`// John is 20 years old and live in California`
+`sayHello("Chiquita", 20, "California");`<br/>
+`// Chiquita is 20 years old and live in California`
 
 ### The return statement
 
 Functions often compute a return value. The return value is "returned" back to the "caller":
 
-`var x = myFunction(4, 3);`   
+`var x = myDisagreeableFunction(4, 3);`   
 
-`function myFunction(a, b) {`<br/>
+`function myDisagreeableFunction(a, b) {`<br/>
 `  return a * b;`<br/>
 `}`
 
@@ -153,10 +153,10 @@ Let's calculate the product of two numbers, and return the result.
 
 *example*
 
-`function myFunction(a, b) {`<br/>
+`function myFavFunction(a, b) {`<br/>
 `   return a * b;`<br/>
 `}`<br/>
-`var x = myFunction(5, 6); `<br/>
+`var x = myFavFunction(5, 6); `<br/>
 `// Return value will end up in x`<br/>
 `// x equals 30`<br/>
 
@@ -197,13 +197,13 @@ The var keyword defines a variable globally, or locally to an entire function re
 
 >alert("Do you really want to leave this page?"); 
 
-** Alert Box 
+** Alert Box** 
 An alert box is used when you want to ensure that information gets through to the user.
 When an alert box pops up, the user must click OK to proceed.
 The alert function takes a single parameter, which is the text displayed in the popup box.
 
 
-** Prompt Box 
+** Prompt Box** 
 is often used to have the user input a value before entering a page.
 When a prompt box pops up, the user will have to click either OK or Cancel to proceed after entering the input value.
 If the user clicks OK, the box returns the input value. If the user clicks Cancel, the box returns null.
@@ -225,7 +225,7 @@ The prompt() method takes two parameters.
 `alert(name);`
 
 
-**Confirm Box
+**Confirm Box**
 
 When a confirm box pops up, the user must click either OK or Cancel to proceed. If the user clicks OK, the box returns true. If the user clicks Cancel, the box returns false.
 
