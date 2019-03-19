@@ -62,10 +62,11 @@ B. JavaScript commands<br/>
 C. Folders<br/>
 
 
-### COMMENTING
+### Commenting
 
 Comments are used to describe and explain what the code is doing. <br/>
 Comments are ignored by the browser and are not executed.<br/>
+
 Single line comments use double slashes.
 
 `<script>
@@ -73,7 +74,7 @@ Single line comments use double slashes.
    alert("This is an alert box!");
 </script>`
 
-Multiple line comments use  slash star and star slash pairings
+Multiple line comments use slash star and star slash pairings
 
 `<script>
    /* This code 
@@ -103,7 +104,8 @@ D. %%this is a comment<br/>`
 
 ### Variables
 
-Variables are containers for storing data values. The value of a variable can change throughout the program. Here we assign the variable a value of 10.
+Variables are containers for storing data values. The value of a variable can change throughout the program. <br/>
+Here we assign the variable a value of 10.
 
 `var x = 10;`
 
@@ -151,10 +153,11 @@ console.log(j);
 // <-- 'Uncaught ReferenceError: j is not defined'`
 
 #### const
+
 Using const allows you to define a variables that cannot be changed to new values. For primitive values such as strings and numbers, this results in something similar to a constant, as you cannot change the value once it has been declared:
 
 
-*example*'
+*example*
 
 `const myBirthday = '18.04.1982';`
 
@@ -178,7 +181,7 @@ Such constants are named using capital letters and underscores.
 
 *example*
 
-`const COLOR_RED = "#F00";
+`const COLOR_RED = "#F00"; ECMAScript 6
 const COLOR_GREEN = "#0F0";
 const COLOR_BLUE = "#00F";
 const COLOR_ORANGE = "#FF7F00";`
@@ -211,16 +214,17 @@ Variables should be named in a way that allows us to easily understand what’s 
 Data type refers to the type of values a program can accept. JavaScript variables can hold many data types, such as numbers, strings, arrays, and more. There are eight data types in JavaScript. Six of them are called “primitive”, because their values contain only a single thing. Symbol is new to  ECMAScript 6 and Null and Undefined are also data types.
 (By contrast, objects are used to store keyed collections of various data.)
 
-let x;
-x = 1;   // x is a number
-x = '1'; // x is a string
-x = " my fav number" // is another string
-x = [1]; // x is an array
-x = true // is Boolean
+let x;<br/>
+x = 1;   // x is a number <br/>
+x = '1'; // x is a string<br/>
+x = " my fav number" // is another string<br/>
+x = [1]; // x is an array<br/>
+x = true // is Boolean<br/>
 
 - Floating point numbers can have decimal points.
 
 - Strings store text. Be sure to match your quotes.
+
 `var text = "My name is 'John' ";`
 
 Or you can escape your quotes like this for double quotes: 
@@ -254,16 +258,16 @@ result *= 5;`
 - Comparison Operators
 `==, ===, !=, !==, >, >=, <, <=`
 
- Comparison operators are used in logical statements to determine equality or difference between variables or values and  they always return true or false.
+Comparison operators are used in logical statements to determine equality or difference between variables or values and  they always return true or false.
 
- 5 == 10 false - equal to
- 5===10 false - identical
- 5!=10 true - not equal to
- 10!==10 false - not identical
- 10> 5 true - greater than
- 10>=5 true - greater than or equal to
- 10<5 false - less than
- 10<=5 false - less than or equal to
+ 5 == 10 false - equal to<br/>
+ 5===10 false - identical<br/>
+ 5!=10 true - not equal to<br/>
+ 10!==10 false - not identical<br/>
+ 10> 5 true - greater than<br/>
+ 10>=5 true - greater than or equal to<br/>
+ 10<5 false - less than<br/>
+ 10<=5 false - less than or equal to<br/>
 
 - Logic Operators
 `&&, !!, ! `
@@ -271,7 +275,7 @@ and, or , not
 
 Logical operators allow you to connect as many expressions as you wish.
 
-Conditional Ternary Operator
+-Conditional Ternary Operator
 
 `var isAdult = (age < 18) ? "Too young": "Old enough";`
 
@@ -286,6 +290,7 @@ document.write(mystring1 + mystring2);`
 Numbers in quotes are treated as strings: "42" is not the number 42, it is a string that includes two characters, 4 and 2.
 
 What is the output of the following code:
+
 `var x = "50";
 var y = "100";
 document.write(x+y);`
