@@ -16,22 +16,22 @@ A. body<br/>
 C. style<br/>
 D. code<br/>
 
->Don't write this (deprecated):
+>Tip: you no longer need to indicate language or type:
 `<script language="javascript" type="text/javascript">`
 
 ### Where is the "script" tag typically placed?
-Inside the HEAD tag.
+Inside the `<head>` tag.
 
 ### Where else? Place the Script Tag in Body
-Where else do you put the script tag? Remember that the script, which is placed in the head section, will be executed before the <body> is rendered. If you want to get elements in the body, it's a good idea to place your script at the end of the body tag. It's a good idea to place scripts at the bottom of the <body> element To let the web page fully load in the browser window. This can improve page load, because HTML display is not blocked by scripts loading.
+Remember that the script which is placed in the head section, will be executed before the `< body >` is rendered. It's a good idea to place scripts at the bottom of the `<body>` element to let the web page fully load in the browser window. This can also improve page load, because the HTML display is not blocked by waiting for scripts to load.
 
 ### And? Link to External file
 Link to an external created custom script file in the head or to a hosted library:
     `<script src="demo.js"></script>`
-     `<script src="modernizer.js"></script>`
+    `<script src="modernizer.js"></script>`
     `<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>`
 
-External scripts are useful and practical when the same code is applied to different web pages.
+- External scripts are useful and practical when the same code is applied to different web pages.
 - Placing a JavaScript in an external file separates HTML and code  and make it easier to read and maintain.
 - Cached JavaScript files can speed up page loads.
 
