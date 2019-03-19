@@ -69,26 +69,26 @@ Comments are ignored by the browser and are not executed.<br/>
 
 Single line comments use double slashes.
 
-`<script><br/>
-   // This is a single line comment<br/>
-   alert("This is an alert box!");<br/>
-</script>`
+`<script>`
+   `// This is a single line comment`
+   `alert("This is an alert box!");`
+`</script>`
 
 Multiple line comments use slash star and star slash pairings
 
-`<script><br/>
-   /* This code <br/>
-   creates an <br/>
-   alert box */<br/>
-   alert("This is an alert box!");<br/>
-</script>`
+`<script>`
+   `/* This code` 
+  ` creates an `
+  ` alert box */`
+  ` alert("This is an alert box!");`
+`</script>`
 
 
 **7.)  How does the single line comment look like?**<br/>
-`*A. // this is a comment*<br/>
-B. <!--this is a comment--><br/>
-C. **this is a comment<br/>
-D. %%this is a comment<br/>`
+`*A. // this is a comment*`
+`B. <!--this is a comment--`<br/>
+`C. **this is a comment`<br/>
+`D. %%this is a comment`<br/>`
 
 ***
 ## MODULE 2 BASIC CONCEPTS
