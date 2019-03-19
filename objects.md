@@ -16,6 +16,7 @@ How to create an object:
 `let user = new Object();`<br/>
 
 *but, cool kids use "object literal" syntax*
+
 `let user = {}; `<br/>
 
 An object can be created with an optional list of properties. A property is a “key: value” pair, where the key or property name is a string and the value can be anything.
@@ -34,6 +35,7 @@ So for practical purposes, methods are actions of an object, while properties ar
 `};`
 
 #### Dot Notation
+
 Property values are accessible using the dot notation:
 
 `alert( user.name ); // John`<br/>
