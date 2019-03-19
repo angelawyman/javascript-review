@@ -63,7 +63,7 @@ You can also format text:
      `</script>`
 
 **6.)  Which choice can be added within the text to be displayed?**<br/>
-*A. Formatting tags*<br/>
+*A. Formatting tags<br/>
 B. JavaScript commands<br/>
 C. Folders<br/>
 
@@ -91,7 +91,7 @@ Multiple line comments use slash star and star slash pairings
 
 
 **7.)  How does the single line comment look like?**<br/>
-`*A. // this is a comment*`<br/>
+*`A. // this is a comment`*<br/>
 `B. <!--this is a comment--`<br/>
 `C. **this is a comment`<br/>
 `D. %%this is a comment`<br/>`
