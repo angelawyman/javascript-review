@@ -2,11 +2,11 @@
 
 # Introduction to JavaScript - Review
 
--Auto-update content, like twitter or facebook feed  🐋
--Animate visual elements 🐈
--Add visual feedback on user interactions ✅
--Add interactive maps 🚀
--Trigger pop-ups/offers after user actions, such as modal windows
+* Auto-update content, like twitter or facebook feed  🐋
+* Animate visual elements 🐈
+* Add visual feedback on user interactions ✅
+* Add interactive maps 🚀
+* Trigger pop-ups/offers after user actions, such as modal windows
 
 **1.) What is JavaScript?**<br/>
 A. JavaScript is used only for web apps<br/>
@@ -40,9 +40,9 @@ Link to an external created custom script file in the head or to a hosted librar
     
     `<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>`
 
-- External scripts are useful and practical when the same code is applied to different web pages.
-- Placing a JavaScript in an external file separates HTML and code  and make it easier to read and maintain.
-- Cached JavaScript files can speed up page loads.
+* External scripts are useful and practical when the same code is applied to different web pages.
+* Placing a JavaScript in an external file separates HTML and code  and make it easier to read and maintain.
+* Cached JavaScript files can speed up page loads.
 
 ### Basics
 
@@ -121,13 +121,13 @@ A variable can be declared without a value. The value might require some calcula
 `document.write(x);`
 
 **Rules to naming variables:**
-- JavaScript is case sensitive. The variable lastName is a different variable than lastname.
-- camelCase is commonly used. That is: words go one after another, each new word starts with a capital letter: myFavoriteFoods. Use logical names with purpose like firstName or shoppingCart.
-- The first character for a variable can be a letter, or an underscore, or a dollar sign. Subsequent characters may be letters, digits, underscores, or dollar signs.
-- Numbers are not allowed as the first character.
-- Mathematical or logical operators are not allowed. For instance, 2*interest, abercrombie+fitch, my%num, num+, are not allowed.
-- Spaces and hyphens in names are not allowed JavaScript.
-- Don't use reserved keywords <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Keywords> like do, catch, case, abstract, break, etc.  Tip: if you write in camelcase this will never be a problem.
+* JavaScript is case sensitive. The variable lastName is a different variable than lastname.
+* camelCase is commonly used. That is: words go one after another, each new word starts with a capital letter: myFavoriteFoods. Use logical names with purpose like firstName or shoppingCart.
+* The first character for a variable can be a letter, or an underscore, or a dollar sign. Subsequent characters may be letters, digits, underscores, or dollar signs.
+* Numbers are not allowed as the first character.
+* Mathematical or logical operators are not allowed. For instance, 2*interest, abercrombie+fitch, my%num, num+, are not allowed.
+* Spaces and hyphens in names are not allowed JavaScript.
+* Don't use reserved keywords <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Keywords> like do, catch, case, abstract, break, etc.  Tip: if you write in camelcase this will never be a problem.
 
 *examples of incorrect variable names*
 
@@ -208,15 +208,16 @@ There is a widespread practice to use constants as aliases for difficult-to-reme
 ### Summary
 We can declare variables to store data by using the var, let, or const keywords.
 
-- let – is a modern variable declaration. The code must be in strict mode to use let in Chrome (V8).
-- var – is an old-school variable declaration. Normally we don’t use it at all, but we’ll cover subtle differences from let in the chapter The old "var", just in case you need them.
-- const – is like let, but the value of the variable can’t be changed.
+* let – is a modern variable declaration. The code must be in strict mode to use let in Chrome (V8).
+* var – is an old-school variable declaration. Normally we don’t use it at all, but we’ll cover subtle differences from let in the chapter The old "var", just in case you need them.
+* const – is like let, but the value of the variable can’t be changed.
 Variables should be named in a way that allows us to easily understand what’s inside them.
 
 ***
 ## Exercises: Working with variables
 
 **Exercise 1**
+
 1. Declare two variables: admin and name.
 2. Assign the value "John" to name.
 3. Copy the value from name to admin.
@@ -224,6 +225,7 @@ Variables should be named in a way that allows us to easily understand what’s 
 
 
 **Exercise 2 - Giving the right name**
+
 1. Create a variable with the name of our planet. How would you name such a variable?
 2. Create a variable to store the name of a current visitor to a website. How would you name that variable?
 
@@ -241,6 +243,7 @@ Q. Would it be right to use upper case for birthday? For age? Or even for both?
 
 `const BIRTHDAY = '18.04.1982'; // make uppercase?`
 `const AGE = someCode(BIRTHDAY); // make uppercase?`
+
 
 ### Data Types
 
