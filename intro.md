@@ -23,12 +23,15 @@ D. code<br/>
 Inside the `<head>` tag.
 
 ### Where else? Inside the body
-Remember that the script which is placed in the head section, will be executed before the `< body >` is rendered. It's a good idea to place scripts at the bottom of the `<body>` element to let the web page fully load in the browser window. This can also improve page load, because the HTML display is not blocked by waiting for scripts to load.
+Remember that the script which is placed in the head section, will be executed before the `<body>` is rendered. It's a good idea to place scripts at the bottom of the `<body>` element to let the web page fully load in the browser window. This can also improve page load, because the HTML display is not blocked by waiting for scripts to load.
 
 ### And? Link to External file
 Link to an external created custom script file in the head or to a hosted library:
+
     `<script src="demo.js"></script>`
+    
     `<script src="modernizer.js"></script>`
+    
     `<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>`
 
 - External scripts are useful and practical when the same code is applied to different web pages.
@@ -102,12 +105,12 @@ D. %%this is a comment<br/>`
 
 Variables are containers for storing data values. The value of a variable can change throughout the program. Here we assign the variable a value of 10.
 
-var x = 10;
+`var x = 10;`
 
 A variable can be declared without a value. The value might require some calculation, something that will be provided later, like user input. A variable declared without a value will have the value undefined.
 
-var x = 100;
-document.write(x);
+`var x = 100;
+document.write(x);`
 
 **Rules to naming variables:**
 - JavaScript is case sensitive. The variable lastName is a different variable than lastname.
@@ -119,17 +122,18 @@ document.write(x);
 - Don't use reserved keywords <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Keywords> like do, catch, case, abstract, break, etc.  Tip: if you write in camelcase this will never be a problem.
 
 *examples of incorrect variable names*
+
 `let my favorite_cat; // can't have a space`
 `let 1market; // can't start with a number`
 `let my-proper-name; // hyphens aren't allowed as they are used for subtraction`
 `let bartle&james; // can't use comparision or mathmatical operators`
 
 
-## ECMA6
+## New Kinds of Variables  ECMAScript 6
 JavaScript now has two additional ways to declare variables: let and const.
 
 #### let
-let is the successor to var. Although var is still available, let limits the scope of variables to the block (rather than the function) they’re declared within, which reduces the room for error:
+let is the successor to var. Although var is still available, let limits the scope of variables to the block (rather than the function) they’re declared within:
 
 `// ES5
 for (var i = 1; i < 5; i++) {
@@ -139,7 +143,7 @@ for (var i = 1; i < 5; i++) {
 console.log(i);
 // <-- 5 (variable i still exists outside the loop)`
 
-`// ES2015 now write this
+`//  ECMAScript 6
 for (let j = 1; j < 5; j++) {
   console.log(j);
 }
@@ -150,10 +154,12 @@ console.log(j);
 Using const allows you to define a variables that cannot be changed to new values. For primitive values such as strings and numbers, this results in something similar to a constant, as you cannot change the value once it has been declared:
 
 
-*example*
+*example*'
+
 `const myBirthday = '18.04.1982';`
 
 *example*
+
 `const name = 'Bill';
 name = 'Steve';
 // <-- 'Uncaught TypeError: Assignment to constant variable.'`
@@ -171,6 +177,7 @@ There is a widespread practice to use constants as aliases for difficult-to-reme
 Such constants are named using capital letters and underscores.
 
 *example*
+
 `const COLOR_RED = "#F00";
 const COLOR_GREEN = "#0F0";
 const COLOR_BLUE = "#00F";
@@ -179,7 +186,6 @@ const COLOR_ORANGE = "#FF7F00";`
 `// ...when we need to pick a color
 let color = COLOR_ORANGE;
 alert(color); // #FF7F00`
-
 
 
 ### Summary
@@ -191,7 +197,7 @@ We can declare variables to store data by using the var, let, or const keywords.
 Variables should be named in a way that allows us to easily understand what’s inside them.
 
 ***
-## Tasks
+## Exercise
 #### Working with variables
 
 1. Declare two variables: admin and name.
@@ -204,14 +210,15 @@ Variables should be named in a way that allows us to easily understand what’s 
 
 ### Data Types
 
-Data type refers to the type of values a program can accept. JavaScript variables can hold many data types, such as numbers, strings, arrays, and more. There are seven data types in JavaScript. Six of them are called “primitive”, because their values contain only a single thing (be it a string or a number or whatever).
-
-In contrast, objects are used to store keyed collections of various data.
+Data type refers to the type of values a program can accept. JavaScript variables can hold many data types, such as numbers, strings, arrays, and more. There are eight data types in JavaScript. Six of them are called “primitive”, because their values contain only a single thing. Symbol is new to  ECMAScript 6 and Null and Undefined are also data types.
+(By contrast, objects are used to store keyed collections of various data.)
 
 let x;
 x = 1;   // x is a number
 x = '1'; // x is a string
+x = " my fav number" // is another string
 x = [1]; // x is an array
+x = true // is Boolean
 
 - Floating point numbers can have decimal points.
 
