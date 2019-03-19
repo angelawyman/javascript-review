@@ -19,7 +19,7 @@ D. code<br/>
 >Don't write this (deprecated):
 `<script language="javascript" type="text/javascript">`
 
-**3). What extension is used for the JavaScript file?**
+**3). What extension is used for the JavaScript file?**\
 *JavaScript files have the file extension .js.*
 
 #### **4.) Where is the "script" tag typically placed?**\
