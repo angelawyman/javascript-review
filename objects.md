@@ -39,26 +39,29 @@ Property values are accessible using the dot notation:
 `alert( user.age ); // 30`
 
 
-But this won't work with multi-word property names.
+The exception is this won't work with multi-word property names.
+
+*here is a multi-word property name*
 
 `// this would give a syntax error`<br/>
 `user.likes birds = true`
 
-#### Square Brackets advantage
-However, square notation will work:
+
+In this case, use square bracket notation:
 
 `let user = {};`<br/>
 `user["likes birds"] = true;`<br/>
 `alert(user["likes birds"]); // true`
 
-You can delete properties:
+
+To delete properties, write like so:
 
 `// delete`<br/>
 `delete user.age;`<br/>
 `delete user["likes birds"];`
 
 
-**Review
+**Review**
 
 * We have an “OBJECT”.
 * Objects contain “PROPERTIES”.  
@@ -68,18 +71,17 @@ You can delete properties:
 
 #### Using Square Brackets for Computed Properties
 
-*example*
+*example -the property name is taken from the variable*
 
 `let fruit = prompt("Which fruit to buy?", "apple");`
 `let bag = {`<br/>
-`  [fruit]: 5, // the name of the property is taken from the variable fruit`<br/>
+`  [fruit]: 5, `<br/>
 `};`<br/>
-`alert( bag.apple ); // 5 if fruit="apple"`
+`alert( bag.apple ); `<br/>
+`// outputs 5 if fruit = "apple"`
 
 This is the same as:
 
 `let fruit = prompt("Which fruit to buy?", "apple");`<br/>
-`let bag = {};`
-
-`// take property name from the fruit variable`<br/>
-`bag[fruit] = 5;``<br/>
+`let bag = {};`<br/>
+`bag[fruit] = 5;`<br/>
