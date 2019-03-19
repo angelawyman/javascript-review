@@ -52,16 +52,6 @@ You can also call a function using this syntax
 
 The difference is that when calling in this way, you're passing the 'this' keyword to a function. You'll learn about it later.
 
-## Return Value
-
-Functions often compute a return value. The return value is "returned" back to the "caller":
-
-`var x = myFunction(4, 3);`   
-
-`function myFunction(a, b) {`<br/>
-`  return a * b;`<br/>
-`}`
-
 ### Function Parameters
 
 Functions can take parameters. 
@@ -150,8 +140,14 @@ If you pass more arguments than are defined, they will be assigned to an array c
 `// John is 20 years old and live in California`
 
 ### The return statement
-A return statement is used to return a value from the function, 
-such as when making calculations that require a result. When JavaScript reaches a return statement, the function stops executing.
+
+Functions often compute a return value. The return value is "returned" back to the "caller":
+
+`var x = myFunction(4, 3);`   
+
+`function myFunction(a, b) {`<br/>
+`  return a * b;`<br/>
+`}`
 
 Let's calculate the product of two numbers, and return the result.
 
@@ -175,6 +171,27 @@ Note: if you do not return anything from a function, it will return undefined.
 `}`<br/>
 `document.write( addNumbers(40, 2) );`<br/>
 `//Outputs 42`<br/>
+
+
+### Scope Local Variables
+
+reference:<https://htmldog.com/guides/javascript/intermediate/scope/>
+
+Variables declared within a JavaScript function, become LOCAL to the function. Local variables can only be accessed from within the function. 
+
+The var keyword defines a variable globally, or locally to an entire function regardless of block scope. While the let keyword allows you to declare variables that are limited in scope to the block, statement, or expression on which it is used. Easiest to say: var is function scoped and let is block scoped. A variable declared with var is defined throughout the program as compared to let.
+
+*example*
+
+`// code here can NOT use myMacLipstick`<br/>
+
+`function myFunction() {`<br/>
+`  var myMacLipstick = "Ruby Woo";`<br/>
+`  // code here CAN use myMacLipstick`<br/>
+`}`
+
+`// NOR can code here use myMacLipstick`
+
 
 ### Using Alert, Prompt and Confirm
 
