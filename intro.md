@@ -22,7 +22,7 @@ D. code<br/>
 ### Where is the "script" tag typically placed?
 Inside the `<head>` tag.
 
-### Where else? Place the Script Tag in Body
+### Where else? Inside the body
 Remember that the script which is placed in the head section, will be executed before the `< body >` is rendered. It's a good idea to place scripts at the bottom of the `<body>` element to let the web page fully load in the browser window. This can also improve page load, because the HTML display is not blocked by waiting for scripts to load.
 
 ### And? Link to External file
