@@ -72,8 +72,8 @@ After defining the parameters, you can use them inside the function.
 `function sayHello(name) {`<br/>
 `   alert("Hi, " + name);`<br/>
 `}`<br/>
-`sayHello("David");`<br/>
-`//Alerts "Hi, David"`<br/>
+`sayHello("Namjoon");`<br/>
+`// alerts "Hi, Namjoon"`<br/>
 
 This function takes in a parameter called name. When calling the function, provide the parameter's value (argument) inside the parentheses. Function arguments are the real values passed to (and received by) the function.
 
@@ -82,9 +82,11 @@ This function takes in a parameter called name. When calling the function, provi
 `function sayHello(name) {`<br/>
 `   alert("Hi, " + name);`<br/>
 `}`<br/>
-`sayHello("Raoul");`<br/>
-`sayHello("Mona");`<br/>
-`sayHello("Chiquita");`<br/>
+`sayHello("Taehyung");`<br/>
+`sayHello("Jin");`<br/>
+`sayHello("Yoongi");`<br/>
+`sayHello("Hoesok");`<br/>
+`sayHello("Jungkook");`<br/>
 
 This will execute the function's code each time for the provided argument.
 
