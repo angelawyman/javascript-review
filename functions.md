@@ -7,14 +7,14 @@
 ***
 
 
-## JavaScript Functions
+### JavaScript Functions
 
 A JavaScript function is a block of code designed to perform a particular task. The main advantages of using functions:
 is you can use the same code many times with different arguments, to produce different results.
 
 A JavaScript function is executed when "something" invokes, or calls, it.
 
-## User-Defined Functions
+### User-Defined Functions
 
 To define a JavaScript function, use the function keyword, followed by a name, followed by a set of parentheses ().
 
@@ -160,14 +160,14 @@ Note: if you do not return anything from a function, it will return undefined.
 
 ### Alert Prompt Confirm
 
-** Alert Box **
+** Alert Box 
 An alert box is used when you want to ensure that information gets through to the user.
 When an alert box pops up, the user must click OK to proceed.
 The alert function takes a single parameter, which is the text displayed in the popup box.
 
 >alert("Do you really want to leave this page?"); 
 
-** Prompt Box **
+** Prompt Box 
 is often used to have the user input a value before entering a page.
 When a prompt box pops up, the user will have to click either OK or Cancel to proceed after entering the input value.
 If the user clicks OK, the box returns the input value. If the user clicks Cancel, the box returns null.
@@ -189,7 +189,7 @@ The prompt() method takes two parameters.
 `alert(name);`
 
 
-**Confirm Box**
+**Confirm Box
 
 When a confirm box pops up, the user must click either OK or Cancel to proceed. If the user clicks OK, the box returns true. If the user clicks Cancel, the box returns false.
 
