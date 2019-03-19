@@ -22,16 +22,16 @@ D. code<br/>
 **3). What extension is used for the JavaScript file?**\
 *JavaScript files have the file extension .js.*
 
-#### **4.) Where is the "script" tag typically placed?**\
+#### **4.) Where is the "script" tag typically placed?**<br />
 A. Before the HTML tag\
 B. After the closing HTML tag\
-*C. Inside the HEAD tag*\
+*C. Inside the HEAD tag*<br />
 
 ### Place Script Tag in Body
 Where else do you put the script tag?
 Remember that the script, which is placed in the head section, will be executed before the <body> is rendered. If you want to get elements in the body, it's a good idea to place your script at the end of the body tag. It's a good idea to place scripts at the bottom of the <body> element. This can improve page load, because HTML display is not blocked by scripts loading.
 
-**5.)  Why is the Javascript code being placed just before the closing body tag?**\
+**5.)  Why is the Javascript code being placed just before the closing body tag?**<br />
 *A. To let the web page fully load in the browser window*\
 B. That's the only possible way\
 C. To comply with the standards\
