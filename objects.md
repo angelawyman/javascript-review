@@ -58,12 +58,13 @@ You can delete properties:
 `delete user["likes birds"];`
 
 
-Review
--We have an “OBJECT”.
--Objects contain “PROPERTIES”.  
--Properties have “NAME and VALUES” key pairs. 
--A value could be a method/function or other data type.
--Object methods are associated to the function in order to make it accomplish a specific task. For example console.log() or document.write() where .log () and  . write ()  are methods.
+**Review
+
+* We have an “OBJECT”.
+* Objects contain “PROPERTIES”.  
+* Properties have “NAME and VALUES” key pairs. 
+* A value could be a method/function or other data type.
+* Object methods are associated to the function in order to make it accomplish a specific task. For example console.log() or document.write() in this case .log () and .write () are methods, the console and the document are objects.
 
 #### Using Square Brackets for Computed Properties
 
