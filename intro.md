@@ -159,19 +159,19 @@ Using const allows you to define a variables that cannot be changed to new value
 
 *example*
 
-`const myBirthday = '18.04.1982';`
+`const myBirthday = '18.04.1982';`<br/>
 
 *example*
 
-`const name = 'Bill';
-name = 'Steve';
-// <-- 'Uncaught TypeError: Assignment to constant variable.'`
+`const name = 'Bill';<br/>
+name = 'Steve';<br/>
+// <-- 'Uncaught TypeError: Assignment to constant variable.'`<br/>
 
 
-`// try again
-const person = { name: 'Bill' };
-person.name = 'Steve';
-// person.name is now Steve.
+`// try again<br/>
+const person = { name: 'Bill' };  <br/>
+person.name = 'Steve';<br/>
+// person.name is now Steve.<br/>
 // As we're not changing the object that person is bound to, JavaScript doesn't complain.`
 
 #### Uppercase constants
@@ -181,14 +181,14 @@ Such constants are named using capital letters and underscores.
 
 *example*
 
-`const COLOR_RED = "#F00"; ECMAScript 6
-const COLOR_GREEN = "#0F0";
-const COLOR_BLUE = "#00F";
-const COLOR_ORANGE = "#FF7F00";`
+`const COLOR_RED = "#F00";<br/>
+const COLOR_GREEN = "#0F0";<br/>
+const COLOR_BLUE = "#00F";<br/>
+const COLOR_ORANGE = "#FF7F00";`<br/>
 
-`// ...when we need to pick a color
-let color = COLOR_ORANGE;
-alert(color); // #FF7F00`
+`// ...when we need to pick a color<br/>
+let color = COLOR_ORANGE;<br/>
+alert(color); // #FF7F00`<br/>
 
 
 ### Summary
@@ -230,7 +230,7 @@ x = true // is Boolean<br/>
 Or you can escape your quotes like this for double quotes: 
 \" or \' inside of single quotes.
 
-`var sayHello = 'Hello world! \'I am a JavaScript programmer.\' ';
+`var sayHello = 'Hello world! \'I am a JavaScript programmer.\' ';<br/>
 document.write(sayHello);`
 
 - Booleans - True or False
@@ -240,8 +240,8 @@ The Boolean value of 0 (zero), null, undefined, empty string is false. Everythin
 `+, -, *, /, %, ++, --`
 
 *example*
-`var x = 10 + 5 (100/5);
-document.write(x);`
+`var x = 10 + 5 (100/5);<br/>
+document.write(x);`<br/>
 
 `// Outputs 15`
 
@@ -250,8 +250,8 @@ Modulus (%) operator returns the division remainder (what is left over).
 - Assignment Operators
 `=, +=, -=, *=, /=, %=`
 
-`var result= 20;
-result *= 5;`
+`var result= 20;<br/>
+result *= 5;`<br/>
 
 `answer: 100;`
 
@@ -283,14 +283,14 @@ Logical operators allow you to connect as many expressions as you wish.
 The most useful operator for strings is concatenation, represented by the + sign. 
 Concatenation can be used to build strings by joining together multiple strings, or by joining strings with other types: 
 
-`var mystring1 = "I am learning ";
-var mystring2 = "JavaScript with SoloLearn.";
+`var mystring1 = "I am learning ";<br/>
+var mystring2 = "JavaScript with SoloLearn.";<br/>
 document.write(mystring1 + mystring2);`
 
 Numbers in quotes are treated as strings: "42" is not the number 42, it is a string that includes two characters, 4 and 2.
 
 What is the output of the following code:
 
-`var x = "50";
-var y = "100";
+`var x = "50";<br/>
+var y = "100";<br/>
 document.write(x+y);`
