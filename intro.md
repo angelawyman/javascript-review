@@ -208,13 +208,33 @@ We can declare variables to store data by using the var, let, or const keywords.
 Variables should be named in a way that allows us to easily understand what’s inside them.
 
 ***
-## Exercise: Working with variables
+## Exercises: Working with variables
 
+Exercise 1
 1. Declare two variables: admin and name.
 2. Assign the value "John" to name.
 3. Copy the value from name to admin.
 4. Show the value of admin using alert (must output “John”).
 
+
+Exercise 2 - Giving the right name
+1. Create a variable with the name of our planet. How would you name such a variable?
+2. Create a variable to store the name of a current visitor to a website. How would you name that variable?
+
+
+Exercise 3 - Uppercase const
+
+1. Examine the following code:
+
+`const birthday = '18.04.1982';`
+`const age = someCode(birthday);`
+
+Here we have a constant birthday date and the age is calculated from birthday with the help of some code (it is not provided for shortness, and because details don’t matter here).
+
+Q. Would it be right to use upper case for birthday? For age? Or even for both?
+
+`const BIRTHDAY = '18.04.1982'; // make uppercase?`
+`const AGE = someCode(BIRTHDAY); // make uppercase?`
 
 ### Data Types
 
