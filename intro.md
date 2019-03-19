@@ -53,6 +53,7 @@ The document.write() function writes a string into our HTML document. This funct
      </script>`
 
 You can also format text:
+
     `<script>
        document.write("<h1>Hello World!</h1>");
      </script>`
@@ -68,12 +69,14 @@ C. Folders
 Comments are used to describe and explain what the code is doing. Comments are ignored by the browser and are not executed.
 
 Single line comments use double slashes.
+
 `<script>
    // This is a single line comment
    alert("This is an alert box!");
 </script>`
 
 Multiple lines
+
 `<script>
    /* This code 
    creates an 
@@ -82,11 +85,11 @@ Multiple lines
 </script>`
 
 
-**7.)  How does the single line comment look like?**
-`*A. // this is a comment*
-B. <!--this is a comment-->\
-C. **this is a comment\
-D. %%this is a comment`
+**7.)  How does the single line comment look like?**<br/>
+`*A. // this is a comment*<br/>
+B. <!--this is a comment--><br/>
+C. **this is a comment<br/>
+D. %%this is a comment<br/>`
 
 ***
 ## MODULE 2 BASIC CONCEPTS
