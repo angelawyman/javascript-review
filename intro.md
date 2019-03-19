@@ -10,7 +10,11 @@ A. JavaScript is used only for web apps<br/>
 *B. You can use JavaScript to create interactive web elements*<br/>
 C. JavaScript is a server-side only language
 
-**2. What tag contains the JavaScript code?**\
+
+**2). What extension is used for the JavaScript file?**\
+*JavaScript files have the file extension .js.*
+
+**3.) What tag contains the JavaScript code?**\
 A. body<br/>
 *B. script*<br/>
 C. style<br/>
@@ -18,9 +22,6 @@ D. code<br/>
 
 >Don't write this (deprecated):
 `<script language="javascript" type="text/javascript">`
-
-**3). What extension is used for the JavaScript file?**\
-*JavaScript files have the file extension .js.*
 
 #### **4.) Where is the "script" tag typically placed?**<br />
 A. Before the HTML tag\
