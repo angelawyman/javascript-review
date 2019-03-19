@@ -25,13 +25,13 @@ Let us take a real life example of an object, say, a siamese cat. The properties
 
 So for practical purposes, methods are actions of an object, while properties are innate features of it. Methods are basically a function of an object, it can only be called on an object.
 
-*example*
+*example - create an object*
 
-`let user = {       // an object`<br/>
-`    name: "John",   // by key "name" store value "John"`<br/>
-`    age: 30,        // by key "age" store value 30`<br/>
-`    adult: true     // boolean value`<br/>
-`    "likes birds": false  // multi-word property name must be quoted`<br/>
+`let user = {`<br/>
+`    name: "John",   `<br/>
+`    age: 30, `<br/>
+`    adult: true;`<br/>
+`    "likes birds": false;  // note: a multi-word property name must be quoted`<br/>
 `};`
 
 #### Dot Notation
@@ -58,7 +58,6 @@ For these cases, use square bracket notation:
 
 To delete properties, write like so:
 
-`// delete`<br/>
 `delete user.age;`<br/>
 `delete user["likes birds"];`
 
