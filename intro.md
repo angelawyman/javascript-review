@@ -1,7 +1,8 @@
 ***
 
 # Introduction to JavaScript - Review
-
+# Module 1: Overview
+***
 * Auto-update content, like twitter or facebook feed  🐋
 * Animate visual elements 🐈
 * Add visual feedback on user interactions ✅
