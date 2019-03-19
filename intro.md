@@ -23,22 +23,17 @@ D. code<br/>
 >Don't write this (deprecated):
 `<script language="javascript" type="text/javascript">`
 
-**4.) Where is the "script" tag typically placed?**\
-A. Before the HTML tag\
-B. After the closing HTML tag\
-*C. Inside the HEAD tag*<br />
+### Where is the "script" tag typically placed?
+Inside the HEAD tag.
 
-### Place the Script Tag in Body
-Where else do you put the script tag? Remember that the script, which is placed in the head section, will be executed before the <body> is rendered. If you want to get elements in the body, it's a good idea to place your script at the end of the body tag. It's a good idea to place scripts at the bottom of the <body> element. This can improve page load, because HTML display is not blocked by scripts loading.
+### Where else? Place the Script Tag in Body
+Where else do you put the script tag? Remember that the script, which is placed in the head section, will be executed before the <body> is rendered. If you want to get elements in the body, it's a good idea to place your script at the end of the body tag. It's a good idea to place scripts at the bottom of the <body> element To let the web page fully load in the browser window. This can improve page load, because HTML display is not blocked by scripts loading.
 
-**5.)  Why place the Javascript code just before the closing body tag?**<br />
-*A. To let the web page fully load in the browser window*\
-B. That's the only possible way\
-C. To comply with the standards\
-
-#### Link to External file
-Link to an external file in the head:
+#### And? Link to External file
+Link to an external created custom file in the head or to a hosted library:
     `<script src="demo.js"></script>`
+     `<script src="modernizer.js"></script>`
+    `<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>`
 
 Your demo.js file includes the following JavaScript:
 
