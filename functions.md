@@ -5,7 +5,7 @@
 ## MODULE 4: Functions
 
 ***
-Reference: <https://www.w3schools.com/js/js_functions.asp>
+References: <https://javascript.info/first-steps>, <https://www.w3schools.com/js/js_functions.asp>
 
 ### JavaScript Functions
 
