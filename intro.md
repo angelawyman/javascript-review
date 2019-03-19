@@ -69,18 +69,18 @@ Comments are ignored by the browser and are not executed.<br/>
 
 Single line comments use double slashes.
 
-`<script>
-   // This is a single line comment
-   alert("This is an alert box!");
+`<script><br/>
+   // This is a single line comment<br/>
+   alert("This is an alert box!");<br/>
 </script>`
 
 Multiple line comments use slash star and star slash pairings
 
-`<script>
-   /* This code 
-   creates an 
-   alert box */
-   alert("This is an alert box!");
+`<script><br/>
+   /* This code <br/>
+   creates an <br/>
+   alert box */<br/>
+   alert("This is an alert box!");<br/>
 </script>`
 
 
@@ -111,7 +111,7 @@ Here we assign the variable a value of 10.
 
 A variable can be declared without a value. The value might require some calculation, something that will be provided later, like user input. A variable declared without a value will have the value undefined.
 
-`var x = 100;
+`var x = 100;<br/>
 document.write(x);`
 
 **Rules to naming variables:**
@@ -125,9 +125,9 @@ document.write(x);`
 
 *examples of incorrect variable names*
 
-`let my favorite_cat; // can't have a space`
-`let 1market; // can't start with a number`
-`let my-proper-name; // hyphens aren't allowed as they are used for subtraction`
+`let my favorite_cat; // can't have a space`<br/>
+`let 1market; // can't start with a number`<br/>
+`let my-proper-name; // hyphens aren't allowed as they are used for subtraction`<br/>
 `let bartle&james; // can't use comparision or mathmatical operators`
 
 
@@ -137,20 +137,20 @@ JavaScript now has two additional ways to declare variables: let and const.
 #### let
 let is the successor to var. Although var is still available, let limits the scope of variables to the block (rather than the function) they’re declared within:
 
-`// ES5
-for (var i = 1; i < 5; i++) {
-  console.log(i);
-}
-// <-- logs the numbers 1 to 4
-console.log(i);
-// <-- 5 (variable i still exists outside the loop)`
+`// ES5<br/>
+for (var i = 1; i < 5; i++) {<br/>
+  console.log(i);<br/>
+}<br/>
+// <-- logs the numbers 1 to 4<br/>
+console.log(i);<br/>
+// <-- 5 (variable i still exists outside the loop)`<br/>
 
-`//  ECMAScript 6
-for (let j = 1; j < 5; j++) {
-  console.log(j);
-}
-console.log(j);
-// <-- 'Uncaught ReferenceError: j is not defined'`
+`//  ECMAScript 6<br/>
+for (let j = 1; j < 5; j++) {<br/>
+  console.log(j);<br/>
+}<br/>
+console.log(j);<br/>
+// <-- 'Uncaught ReferenceError: j is not defined'`<br/>
 
 #### const
 
@@ -222,7 +222,6 @@ x = [1]; // x is an array<br/>
 x = true // is Boolean<br/>
 
 - Floating point numbers can have decimal points.
-
 - Strings store text. Be sure to match your quotes.
 
 `var text = "My name is 'John' ";`
