@@ -1,6 +1,3 @@
-##### This is a markdown file.
-###
-
 ***
 
 # INTRODUCTION
@@ -9,7 +6,6 @@
 A. JavaScript is used only for web apps<br/>
 *B. You can use JavaScript to create interactive web elements*<br/>
 C. JavaScript is a server-side only language
-
 
 **2). What extension is used for the JavaScript file?**\
 *JavaScript files have the file extension .js.*
@@ -29,17 +25,11 @@ Inside the HEAD tag.
 ### Where else? Place the Script Tag in Body
 Where else do you put the script tag? Remember that the script, which is placed in the head section, will be executed before the <body> is rendered. If you want to get elements in the body, it's a good idea to place your script at the end of the body tag. It's a good idea to place scripts at the bottom of the <body> element To let the web page fully load in the browser window. This can improve page load, because HTML display is not blocked by scripts loading.
 
-#### And? Link to External file
+### And? Link to External file
 Link to an external created custom file in the head or to a hosted library:
     `<script src="demo.js"></script>`
      `<script src="modernizer.js"></script>`
     `<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>`
-
-Your demo.js file includes the following JavaScript:
-
->alert("This is an alert box!");
-
-Every written "instruction" is called a statement. JavaScript statements are separated by semicolons.
 
 Scripts can be placed in external files.
 External scripts are useful and practical when the same code is used in a number of different web pages.
@@ -48,28 +38,34 @@ Placing a JavaScript in an external file has the following advantages:
 - It makes HTML and JavaScript easier to read and maintain.
 - Cached JavaScript files can speed up page loads.
 
+### Basics
 
+Your demo.js file includes the following JavaScript:
+
+>alert("This is an alert box!");
+
+Every written "instruction" is called a statement. <br/>
+JavaScript statements are separated by semicolons.<br/>
 The document.write() function writes a string into our HTML document. This function can be used to write text, HTML, or both. 
 
     ` <script>
        document.write("Hello World!");
      </script>`
 
-You can also format text
-
+You can also format text:
     `<script>
        document.write("<h1>Hello World!</h1>");
      </script>`
 
 **6.)  Which choice can be added within the text to be displayed?**
 *A. Formatting tags*
-B. JavaScript commands
+B. JavaScript commands\
 C. Folders
 
 
 ### COMMENTING
 
-Comments are used to describe and explain what the code is doing. Comments are ignored by the browser, and are not executed.
+Comments are used to describe and explain what the code is doing. Comments are ignored by the browser and are not executed.
 
 Single line comments use double slashes.
 `<script>
@@ -88,8 +84,8 @@ Multiple lines
 
 **7.)  How does the single line comment look like?**
 `*A. // this is a comment*
-B. <!--this is a comment-->
-C. **this is a comment
+B. <!--this is a comment-->\
+C. **this is a comment\
 D. %%this is a comment`
 
 ***
