@@ -135,60 +135,68 @@ document.write(x);`
 JavaScript now has two additional ways to declare variables: let and const.
 
 #### let
-let is the successor to var. Although var is still available, let limits the scope of variables to the block (rather than the function) they’re declared within:
+let is the successor to var. Although var is still available, let limits the scope of variables to the block (rather than the function) they’re declared within.
 
-`// ES5<br/>
-for (var i = 1; i < 5; i++) {<br/>
-  console.log(i);<br/>
-}<br/>
-// <-- logs the numbers 1 to 4<br/>
-console.log(i);<br/>
-// <-- 5 (variable i still exists outside the loop)`<br/>
+*old style ES5*
 
-`//  ECMAScript 6<br/>
-for (let j = 1; j < 5; j++) {<br/>
-  console.log(j);<br/>
-}<br/>
-console.log(j);<br/>
-// <-- 'Uncaught ReferenceError: j is not defined'`<br/>
+`for (var i = 1; i < 5; i++) {`
+  `console.log(i);`
+`}`
+`// <-- logs the numbers 1 to 4`
+`console.log(i);`
+`// <-- 5 (variable i still exists outside the loop)`
+
+
+*ECMAScript 6*
+
+`for (let j = 1; j < 5; j++) {`
+  `console.log(j);`
+`}`
+`console.log(j);`
+`// <-- won't work - j is not defined'`
+
 
 #### const
 
-Using const allows you to define a variables that cannot be changed to new values. For primitive values such as strings and numbers, this results in something similar to a constant, as you cannot change the value once it has been declared:
+Using const allows you to define a variables that cannot be changed to new values. A const can’t be declared without a value, unlike a var or let variable.
+
+*example*
+
+`var x; // valid`
+`let y; //valid`
+`const z; // error`
 
 
 *example*
 
-`const myBirthday = '18.04.1982';`<br/>
+`const myDivorce = '14.12.1987';`
 
 *example*
 
-`const name = 'Bill';<br/>
-name = 'Steve';<br/>
-// <-- 'Uncaught TypeError: Assignment to constant variable.'`<br/>
+`const name = 'Casey';`
+`name = 'Parker';`
+`// <-- this won't work`
+
+*better approach*
+
+`const person = { name: 'Casey' }; ` 
+`person.name = 'Parker';`
+`// As we're not changing the object person this works.`
 
 
-`// try again<br/>
-const person = { name: 'Bill' };  <br/>
-person.name = 'Steve';<br/>
-// person.name is now Steve.<br/>
-// As we're not changing the object that person is bound to, JavaScript doesn't complain.`
-
-#### Uppercase constants
-There is a widespread practice to use constants as aliases for difficult-to-remember values that are known prior to execution.
-
-Such constants are named using capital letters and underscores.
+#### All Uppercase constants
+There is a widespread practice to use constants as aliases for difficult-to-remember values that are known prior to execution. Such constants are named using capital letters and underscores.
 
 *example*
 
-`const COLOR_RED = "#F00";<br/>
-const COLOR_GREEN = "#0F0";<br/>
-const COLOR_BLUE = "#00F";<br/>
-const COLOR_ORANGE = "#FF7F00";`<br/>
+`const COLOR_RED = "#F00";`
+`const COLOR_GREEN = "#0F0";`
+`const COLOR_BLUE = "#00F";`
+`const COLOR_ORANGE = "#FF7F00";`
 
-`// ...when we need to pick a color<br/>
-let color = COLOR_ORANGE;<br/>
-alert(color); // #FF7F00`<br/>
+
+`let color = COLOR_ORANGE;`
+`alert(color); // #FF7F00`
 
 
 ### Summary
@@ -200,8 +208,7 @@ We can declare variables to store data by using the var, let, or const keywords.
 Variables should be named in a way that allows us to easily understand what’s inside them.
 
 ***
-## Exercise
-#### Working with variables
+## Exercise: Working with variables
 
 1. Declare two variables: admin and name.
 2. Assign the value "John" to name.
