@@ -1,6 +1,6 @@
 ***
 
-# INTRODUCTION
+# Introduction
 
 **1.) What is JavaScript?**<br/>
 A. JavaScript is used only for web apps<br/>
@@ -26,21 +26,16 @@ Inside the HEAD tag.
 Where else do you put the script tag? Remember that the script, which is placed in the head section, will be executed before the <body> is rendered. If you want to get elements in the body, it's a good idea to place your script at the end of the body tag. It's a good idea to place scripts at the bottom of the <body> element To let the web page fully load in the browser window. This can improve page load, because HTML display is not blocked by scripts loading.
 
 ### And? Link to External file
-Link to an external created custom file in the head or to a hosted library:
+Link to an external created custom script file in the head or to a hosted library:
     `<script src="demo.js"></script>`
      `<script src="modernizer.js"></script>`
     `<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>`
 
-Scripts can be placed in external files.
-External scripts are useful and practical when the same code is used in a number of different web pages.
-Placing a JavaScript in an external file has the following advantages: 
-- It separates HTML and code.
-- It makes HTML and JavaScript easier to read and maintain.
+External scripts are useful and practical when the same code is applied to different web pages.
+- Placing a JavaScript in an external file separates HTML and code  and make it easier to read and maintain.
 - Cached JavaScript files can speed up page loads.
 
 ### Basics
-
-Your demo.js file includes the following JavaScript:
 
 >alert("This is an alert box!");
 
@@ -58,16 +53,16 @@ You can also format text:
        document.write("<h1>Hello World!</h1>");
      </script>`
 
-**6.)  Which choice can be added within the text to be displayed?**
-*A. Formatting tags*
-B. JavaScript commands\
-C. Folders
+**6.)  Which choice can be added within the text to be displayed?**<br/>
+*A. Formatting tags*<br/>
+B. JavaScript commands<br/>
+C. Folders<br/>
 
 
 ### COMMENTING
 
-Comments are used to describe and explain what the code is doing. Comments are ignored by the browser and are not executed.
-
+Comments are used to describe and explain what the code is doing. <br/>
+Comments are ignored by the browser and are not executed.<br/>
 Single line comments use double slashes.
 
 `<script>
@@ -75,7 +70,7 @@ Single line comments use double slashes.
    alert("This is an alert box!");
 </script>`
 
-Multiple lines
+Multiple line comments use  slash star and star slash pairings
 
 `<script>
    /* This code 
