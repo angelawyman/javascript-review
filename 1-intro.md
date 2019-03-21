@@ -27,7 +27,7 @@ C. style<br/>
 D. code<br/>
 
 Tip: you no longer need to indicate language or type. Don't do this!!  
---<script language="javascript" type="text/javascript">--
+`--<script language="javascript" type="text/javascript"></script>--`
 ***
 
 ### Where is the "script" tag typically placed?
