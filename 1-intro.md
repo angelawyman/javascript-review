@@ -3,12 +3,14 @@
 # JavaScript Review
 
 ## MODULE 1: JavaScript Overview
-We use JavaScript to make the site more dynamic and interactive.
+We use JavaScript to make a site more dynamic and interactive.  
+Such features might include slide carousels, lightbox gallery, scroll to top, and others. 
 - Auto-update social media content, like twitter or facebook feed 🐋
 - Animate visual elements 🐈
 - Add visual feedback on user interactions ✅
 - Place interactive maps 🚀
 - Trigger pop-ups after user actions, such as modal windows
+
 
 **Q1.) What is JavaScript?**  
 A. JavaScript is used only for web apps  
@@ -16,7 +18,7 @@ B. You can use JavaScript to create interactive web elements
 C. JavaScript is a server-side only language
 
 **Q2). What extension is used for the JavaScript file?**\
-*JavaScript files have the file extension _____*
+JavaScript files have the file extension _____
 
 **Q3.) What tag contains the JavaScript code?**\
 A. body<br/>
@@ -24,24 +26,24 @@ B. script<br/>
 C. style<br/>
 D. code<br/>
 
->Tip: you no longer need to indicate language or type. Don't do this!!  
---`<script language="javascript" type="text/javascript">`--
+Tip: you no longer need to indicate language or type. Don't do this!!  
+--<script language="javascript" type="text/javascript">--
 
 
 ### Where is the "script" tag typically placed?
-
-Inside the `<head>` tag.
+Inside the `<head>` tag between `<script>` and `</script>`
 
 ### Where else? Inside the body
-Remember that the script which is placed in the head section, will be executed before the `<body>` is rendered. It's a good idea to place scripts at the **bottom** of the `<body>` element to let the web page fully load in the browser window. This can also improve page load, because the HTML display is not blocked while waiting for scripts to load.
+Remember that the script which is placed in the head section, will be executed before the `<body>` is rendered. It can be a good idea to place scripts at the **bottom** of the `<body>` element to let the web page fully load in the browser window. This can also improve page load, because the HTML display is not blocked while waiting for scripts to load.
 
 ### And? Link to External file
-Link to an external created custom script file in the head or to a hosted library:
+For longer pages of code link to an external created custom script file in the head.   
+And you can link to hosted libraries, like JQuery:
 
 ```bash
-    <script src="demo.js"></script>
+    <script src="bowser-demo.js"></script>
     <script src="modernizer.js"></script>
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </script>
 ```
 
@@ -54,10 +56,11 @@ Link to an external created custom script file in the head or to a hosted librar
 
 ### Basics
 
->alert("This is an alert box!");
+`alert("This is an alert box!");`
 
-Every written "instruction" is called a statement. <br/>
-JavaScript statements are separated by semicolons.<br/>
+Every written "instruction" is called a statement.  
+JavaScript statements are separated by semicolons.  
+A bunch of statements listed are referred to as a block of code.  
 The document.write() function writes a string into our HTML document. This function can be used to write text, HTML, or both. 
 
     ` <script>`<br/>
@@ -71,7 +74,7 @@ You can also format text:
      `</script>`
 
 **6.)  Which choice can be added within the text to be displayed?**<br/>
-*A. Formatting tags<br/>
+A. Formatting tags<br/>
 B. JavaScript commands<br/>
 C. Folders<br/>
 
