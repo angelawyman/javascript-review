@@ -229,21 +229,6 @@ person.name = 'Parker';
 // As we're not changing the object named 'person' this works.
 ```
 
-#### All Uppercase Constants
-There is a widespread practice to use constants as aliases for difficult-to-remember values that are known prior to execution. Such constants are named using capital letters and underscores.
-
-*example*
-
-`const COLOR_RED = "#F00";`<br/>
-`const COLOR_GREEN = "#0F0";`<br/>
-`const COLOR_BLUE = "#00F";`<br/>
-`const COLOR_ORANGE = "#FF7F00";`<br/>
-
-
-`let color = COLOR_ORANGE;`<br/>
-`alert(color); // #FF7F00`
-
-
 ### Summary
 We can declare variables to store data by using the var, let, or const keywords.
 
@@ -329,7 +314,7 @@ answer: 100;
 `==, ===, !=, !==, >, >=, <, <=`
 
 Comparison operators are used in logical statements to determine equality or difference between variables or values and  they always return true or false.
-
+```bash
 ` 5 == 10 false - equal to`
 ` 5===10 false - identical`
  `5!=10 true - not equal to`
@@ -338,7 +323,7 @@ Comparison operators are used in logical statements to determine equality or dif
  `10>=5 true - greater than or equal to`
  `10<5 false - less than`
  `10<=5 false - less than or equal to`
-
+```
 ### Logic Operators
 `&&, !!, ! ` = and, or, not
 
