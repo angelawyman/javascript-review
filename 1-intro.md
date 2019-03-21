@@ -75,9 +75,9 @@ You can also format the text with HTML.
      </script>
 ```
 ***
-**Q4.)  Which choice can be added within the text to be displayed?**   
-A. Formatting tags   
-B. JavaScript commands 
+**Q4.)  Which choice can be added within the text to be displayed?**     
+A. Formatting tags     
+B. JavaScript commands   
 C. Folders  
 ***
 
@@ -105,8 +105,8 @@ Use slash star and star slash pairings for multiple comments
 </script>
 ```
 ***
-**Q5.)  How does the single line comment look like?**
-A. '// this is a comment`  
+**Q5.)  How does the single line comment look like?**    
+A. '// this is a comment`    
 B. '<!--this is a comment--`
 C. '**this is a comment`
 D. '%%this is a comment`
@@ -210,8 +210,8 @@ const z; // will throw an error
 
 *example*
 ```bash
-`const myDivorce = '14.12.1987';`
-`const momBirthday = '15.12';`
+const myDivorce = '14.12.1987';
+const momBirthday = '15.12';
 ```
 
 *example*
