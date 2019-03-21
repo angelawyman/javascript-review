@@ -105,12 +105,13 @@ Use slash star and star slash pairings for multiple comments
 </script>
 ```
 ***
-**Q5.)  How does the single line comment look like?**    
-A. '// this is a comment`    
-B. '<!--this is a comment--`
-C. '**this is a comment`
-D. '%%this is a comment`
-
+**Q5.) How does the single line comment look like?**    
+```bash
+A. // this is a comment    
+B. <!--this is a comment-->
+C. **this is a comment
+D. %%this is a comment
+```
 ***
 ## MODULE 2: Basic Concepts
 
@@ -185,7 +186,7 @@ for (var i = 1; i < 5; i++) {
 }
 // will output the numbers 1 to 4
 console.log(i);
-// this time will output 5 as the variable i still exists outside the loop)
+// this will output 5 as the variable i still exists outside the loop
 ```
 
 *ECMAScript 6*
@@ -224,7 +225,7 @@ name = 'Parker';
 ```bash
 const person = { name: 'Casey' }; 
 person.name = 'Parker';
-// As we're not changing the object named 'person' this works.
+// as we're not changing the object named 'person' this works.
 ```
 
 ### Summary
