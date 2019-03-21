@@ -4,7 +4,7 @@
 
 ## MODULE 1: JavaScript Overview
 We use JavaScript to make a site more dynamic and interactive.  
-Such features might include slide carousels, lightbox gallery, scroll to top, and others. 
+Among such features might be slide carousels, a lightbox gallery, an icon to scroll to top, among others. 
 - Auto-update social media content, like twitter or facebook feed 🐋
 - Animate visual elements 🐈
 - Add visual feedback on user interactions ✅
@@ -17,7 +17,7 @@ A. JavaScript is used only for web apps
 B. You can use JavaScript to create interactive web elements  
 C. JavaScript is a server-side only language
 
-**Q2.) What extension is used for the JavaScript file?**
+**Q2.) What extension is used for the JavaScript file?** <br/>
 JavaScript files have the file extension _____
 
 **Q3.) What tag contains the JavaScript code?**  
