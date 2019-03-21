@@ -1,7 +1,6 @@
-*
+
 ---
 # JavaScript Review
----
 
 ## MODULE 1: JavaScript Overview
 
@@ -11,19 +10,19 @@
 * Add interactive maps 🚀
 * Trigger pop-ups/offers after user actions, such as modal windows
 
-**Q1.) What is JavaScript?**..
-A. JavaScript is used only for web apps.. 
-B. You can use JavaScript to create interactive web elements.. 
+**Q1.) What is JavaScript?**  
+A. JavaScript is used only for web apps  
+B. You can use JavaScript to create interactive web elements   
 C. JavaScript is a server-side only language
 
 **2). What extension is used for the JavaScript file?**\
-*JavaScript files have the file extension .js.*
+JavaScript files have the file extension .js.
 
 **3.) What tag contains the JavaScript code?**\
-A. body . 
-B. script..
-C. style..
-D. code..
+A. body  
+B. script  
+C. style  
+D. code  
 
 >Tip: you no longer need to indicate language or type:
 `<script language="javascript" type="text/javascript">`
