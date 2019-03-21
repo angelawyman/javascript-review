@@ -17,14 +17,14 @@ A. JavaScript is used only for web apps
 B. You can use JavaScript to create interactive web elements  
 C. JavaScript is a server-side only language
 
-**Q2.) What extension is used for the JavaScript file?**\
+**Q2.) What extension is used for the JavaScript file?**
 JavaScript files have the file extension _____
 
-**Q3.) What tag contains the JavaScript code?**\
-A. body<br/>
-B. script<br/>
-C. style<br/>
-D. code<br/>
+**Q3.) What tag contains the JavaScript code?**  
+A. body  
+B. script  
+C. style  
+D. code
 
 Tip: you no longer need to indicate language or type. Don't do this!!  
 `--<script language="javascript" type="text/javascript"></script>--`
@@ -44,7 +44,6 @@ Also, you can link to hosted libraries, such as JQuery:
     <script src="bowser-demo.js"></script>
     <script src="modernizer.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    </script>
 ```
 
 - External scripts are useful and practical when the same code is applied to different web pages.
@@ -76,41 +75,41 @@ You can also format the text with HTML.
      </script>
 ```
 ***
-**Q4.)  Which choice can be added within the text to be displayed?**\ 
-A. Formatting tags\  
-B. JavaScript commands\ 
+**Q4.)  Which choice can be added within the text to be displayed?**   
+A. Formatting tags   
+B. JavaScript commands 
 C. Folders  
 ***
 
 ### Commenting
 
-Comments are used to describe and explain what the code is doing. <br/>
-Comments are ignored by the browser and are not executed.<br/>
+Comments are used to describe and explain what the code is doing.  
+Comments are ignored by the browser and are not executed.
 
 Use double slashes for single line comments.
 ```bash
-<script><br/>
-   // This is a single line comment<br/>
-   alert("This is an alert box!");<br/>
+<script>
+   // This is a single line comment
+   alert("This is an alert box!");
 </script>
 ```
 
 Use slash star and star slash pairings for multiple comments
 
 ```bash
-  <script> <br/>
-    /* This code <br/>
-    creates an <br/>
-    alert box */<br/>
-    alert("This is an alert box!");<br/>
+  <script> 
+    /* This code 
+    creates an 
+    alert box */
+    alert("This is an alert box!");
 </script>
 ```
 ***
-**Q5.)  How does the single line comment look like?**\
-`A. // this is a comment`\
-`B. <!--this is a comment--`\
-`C. **this is a comment`\
-`D. %%this is a comment`\
+**Q5.)  How does the single line comment look like?**
+A. '// this is a comment`  
+B. '<!--this is a comment--`
+C. '**this is a comment`
+D. '%%this is a comment`
 
 ***
 ## MODULE 2: Basic Concepts
@@ -166,9 +165,9 @@ document.write(favoriteFood);
 
 *examples of incorrect variable names*
 ```bash
-let my favorite_cat; // can't have a space\  
-let 1market; // can't start with a number\  
-let my-proper-name; // hyphens aren't allowed as they are used for subtraction\ 
+let my favorite_cat; // can't have a space   
+let 1market; // can't start with a number  
+let my-proper-name; // hyphens aren't allowed as they are used for subtraction 
 let bartle&james; // can't use comparision or mathmatical operators 
 ```
 
@@ -181,19 +180,18 @@ let is the successor to var. Although var is still available, let limits the sco
 *old style ES5*
 
 ```bash
-for (var i = 1; i < 5; i++) {\ 
-  console.log(i);\
+for (var i = 1; i < 5; i++) { 
+  console.log(i);
 }
-// will output the numbers 1 to 4\
-
-console.log(i);\
-// will output 5 as the variable i still exists outside the loop)
+// will output the numbers 1 to 4
+console.log(i);
+// this time will output 5 as the variable i still exists outside the loop)
 ```
 
 *ECMAScript 6*
 ```bash
 for (let j = 1; j < 5; j++) 
-  console.log(j);<br/>
+  console.log(j);
 }
 console.log(j);
 // this won't work as j is not defined
@@ -270,14 +268,14 @@ const AGE = someCode(BIRTHDAY); // make uppercase?
 ### Data Types
 
 Data type refers to the type of values a program can accept. JavaScript variables can hold many data types, such as numbers, strings, arrays, and more.  Six of the data types are called “primitive”, because their values contain only a single thing. Symbol is new to  ECMAScript 6, Null and Undefined are also data types. By contrast, objects are used to store keyed collections of various data.
-
-`let x;`<br/>
-`x = 1;   // x is a number `<br/>
-`x = '1'; // x is a string`<br/>
-`x = " my fav number" // is another string`<br/>
-`x = [1]; // x is an array`<br/>
-`x = true // is Boolean`<br/>
-
+```bash
+let x; 
+x = 1;   // x is a number  
+x = '1'; // x is a string 
+x = " my fav number" // is another string 
+x = [1]; // x is an array 
+x = true // is Boolean 
+```
 - Floating point numbers can have decimal points.
 - Strings store text. Be sure to match your quotes.
 
