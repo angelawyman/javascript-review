@@ -1,27 +1,29 @@
-***
+*
+---
+# JavaScript Review
+---
 
-# Introduction to JavaScript - Review
-## MODULE 1: Overview
-***
+## MODULE 1: JavaScript Overview
+
 * Auto-update content, like twitter or facebook feed  🐋
 * Animate visual elements 🐈
 * Add visual feedback on user interactions ✅
 * Add interactive maps 🚀
 * Trigger pop-ups/offers after user actions, such as modal windows
 
-**1.) What is JavaScript?**<br/>
-A. JavaScript is used only for web apps<br/>
-*B. You can use JavaScript to create interactive web elements*<br/>
+**Q1.) What is JavaScript?**..
+A. JavaScript is used only for web apps.. 
+B. You can use JavaScript to create interactive web elements.. 
 C. JavaScript is a server-side only language
 
 **2). What extension is used for the JavaScript file?**\
 *JavaScript files have the file extension .js.*
 
 **3.) What tag contains the JavaScript code?**\
-A. body<br/>
-*B. script*<br/>
-C. style<br/>
-D. code<br/>
+A. body . 
+B. script..
+C. style..
+D. code..
 
 >Tip: you no longer need to indicate language or type:
 `<script language="javascript" type="text/javascript">`
@@ -35,15 +37,16 @@ Remember that the script which is placed in the head section, will be executed b
 ### And? Link to External file
 Link to an external created custom script file in the head or to a hosted library:
 
-    `<script src="demo.js"></script>`
-    
-    `<script src="modernizer.js"></script>`
-    
-    `<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>`
-
+```bash
+    <script src="demo.js"></script>
+    <script src="modernizer.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js">
+    </script>
+```
 * External scripts are useful and practical when the same code is applied to different web pages.
 * Placing a JavaScript in an external file separates HTML and code  and make it easier to read and maintain.
 * Cached JavaScript files can speed up page loads.
+
 
 ### Basics
 
