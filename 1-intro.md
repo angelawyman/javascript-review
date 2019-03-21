@@ -315,14 +315,14 @@ answer: 100;
 
 Comparison operators are used in logical statements to determine equality or difference between variables or values and  they always return true or false.
 ```bash
-` 5 == 10 false - equal to`
-` 5===10 false - identical`
- `5!=10 true - not equal to`
- `10!==10 false - not identical`
- `10> 5 true - greater than`
- `10>=5 true - greater than or equal to`
- `10<5 false - less than`
- `10<=5 false - less than or equal to`
+5 == 10 false - equal to
+5===10 false - identical
+5!=10 true - not equal to
+10!==10 false - not identical
+10> 5 true - greater than
+10>=5 true - greater than or equal to
+10<5 false - less than
+10<=5 false - less than or equal to
 ```
 ### Logic Operators
 `&&, !!, ! ` = and, or, not
