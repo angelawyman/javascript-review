@@ -3,7 +3,7 @@
 
 ***
 
-## Module 3: Conditionals and Loops
+## Module: Conditionals and Loops
 
 ***
 
@@ -11,12 +11,15 @@
 
 ### The if statement
 Use if to specify a block of code that will be executed if a specified condition is true.
-*Syntax*
-`if (condition) {`<br/>
-   `statements`<br/>
-`}`
 
+*syntax*
+```bash
+if (condition) {
+   statements
+}
+```
 *example*
+
 ```bash
 var myNum1 = 7;
 var myNum2 = 10;
@@ -50,6 +53,7 @@ else {
 ```
 
 *example*
+
 ```bash
 var age = 25;
 if (age >= 18) {
@@ -75,6 +79,7 @@ if (course == 1) {
 }
 ```
 *example*
+
 ```bash
 var status = 1;
 var msg;
@@ -108,6 +113,7 @@ switch (expression) {
 }
 
 *example*
+
 ```bash
 var day = 2;
 switch (day) {
@@ -159,7 +165,9 @@ switch (x) {
 #### The default Keyword
 
 The default keyword specifies the code to run if there is no case match.
+
 *example*
+
 ```bash
 var color ="yellow";
 switch(color) { 
@@ -190,12 +198,14 @@ ES6 introduces other for loop types; you can learn about them in the ES6 course 
 ### The for loop
 
 *syntax*
+
 ```bash
 for (statement 1; statement 2; statement 3) {
    code block to be executed
 }
 ```
 *example*
+
 ```bash
 for (i=1; i<=5; i++) {
    document.write(i + "<br />");
@@ -205,6 +215,7 @@ for (i=1; i<=5; i++) {
 * Statement 2 defines the condition for the loop to run (i must be less than or equal to 5). If you omit statement 2, you must provide a break inside the loop. Otherwise, the loop will never end.
 * Statement 3 increases a value (i++) each time the code block in the loop has been executed.
 - Statement 3 is also optional, and it can be omitted if you increment your values inside the loop.
+
 ```bash
 var i = 0;
 for (; i < 10; ) {
@@ -224,6 +235,7 @@ for (k=1; k<10; k++){
 ### The while loop
 
 *syntax*
+
 ```bash
 while (condition) {   
    code block
@@ -241,6 +253,7 @@ The loop will continue to run as long as i is less than, or equal to, 10. Each t
 This will output the values from 0 to 10.
 
 *another example*
+
 ```bash
 var x=1;
   while (x<=10) {
@@ -256,6 +269,7 @@ The do...while loop is a variant of the while loop. This loop will execute the c
 The loop will always be executed at least once, even if the condition is false, because the code block is executed before the condition is tested.
 
 *syntax*
+
 ```bash
 do {
    code block
@@ -272,6 +286,7 @@ while (i<=25);
 //this will print out numbers from 20 to 25.
 ```
 *example*
+
 ```bash
 var count=1;
 do {
@@ -283,6 +298,7 @@ while (count<=10);
 #### **Break**
 
 The break statement "jumps out" of a loop and continues executing the code after the loop. You can use the return keyword to return some value immediately from the loop inside of a function. This will also break the loop.
+
 ```bash
 for (i = 0; i <= 10; i++) {
    if (i == 5) {
@@ -294,6 +310,7 @@ for (i = 0; i <= 10; i++) {
 #### **Continue**
 
 The continue statement breaks only one iteration in the loop, and continues with the next iteration.
+
 ```bash
 for (i = 0; i <= 10; i++) {
    if (i == 5) {
@@ -307,6 +324,7 @@ The value 5 is not printed, because continue skips that iteration of the loop.
 
 
 Q.) What is the output of this code?
+
 ```bash
 var sum=0; 
 for(i=4; i<8; i++) {
@@ -317,6 +335,7 @@ for(i=4; i<8; i++) {
 }
 document.write(sum);
 ```
+
 Explanation: the "loop" will loop three times according to loop condition. 
 at the first loop "i" will equal "4".
 at the second loop i = 5 
@@ -329,7 +348,9 @@ so sum equals 16
 
 
 #### Quiz
+
 Q.) What is the output of this code?
+
 ```bash
 var x = 0;
   while(x<6) {
@@ -341,6 +362,7 @@ document.write(x);
 Answer 6. the value is incremented AFTER the condition is checked, so in this case when x reaches 5 is true according to the condition, so it is allowed to be incremented. The loop now will stop because the condition is not true
 
 Q.) Please fill in the right keywords to test the conditions:
+
 ```bash
 _______(day_of_week) {
   case 1:
@@ -361,6 +383,7 @@ _____;
 }
 ```
 Q.) Please fill in the right keywords to compose a loop:
+
 ```bash
 var i=0;
 __do____{
