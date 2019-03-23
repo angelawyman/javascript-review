@@ -243,13 +243,14 @@ while (condition) {
 }
 ```
 *example*
+
 ```bash
 var i=0;
   while (i<=10) {
     document.write(i + "<br />");
     i++;
 }
-``` . 
+```
 The loop will continue to run as long as i is less than, or equal to, 10. Each time the loop runs, it will increase by 1.
 This will output the values from 0 to 10.
 
