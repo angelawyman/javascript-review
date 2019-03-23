@@ -34,7 +34,7 @@ Tip: you no longer need to indicate language or type. Don't do this!!
 Inside the `<head>` tag between `<script>` and `</script>`
 
 ### Where else? Inside the body
-Remember that the script which is placed in the head section, will be executed before the `<body>` is rendered. It can be a good idea to place scripts at the **bottom** of the `<body>` element to let the web page fully load in the browser window. This can also improve page load, because the HTML display is not blocked while waiting for scripts to load.
+If the script is placed in the head section, this will be executed before the `<body>` is rendered. Often the best strategy is instead to put the <script> element at the **bottom** of the `<body>` element to let the web page fully load in the browser window. Placing it here can also improve page load, because the HTML display is not blocked while waiting for scripts to load.
 
 ### And? Link to External file
 For longer pages of code link to an external created custom script file in the head.   
