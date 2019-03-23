@@ -102,7 +102,7 @@ In cases when you need to test for multiple conditions, writing if else statemen
 The switch statement is used to perform different actions based on different conditions. The switch expression is evaluated once. The value of the expression is compared with the values of each case. If there is a match, the associated block of code is executed. You can have as many case statements as needed.
 
 *syntax:*
-
+```bash
 switch (expression) {
   case n1:
      statements
@@ -113,7 +113,7 @@ switch (expression) {
   default: 
      statements
 }
-
+```
 *example*
 
 ```bash
@@ -139,9 +139,7 @@ switch (day) {
 
 When JavaScript code reaches a break keyword, it breaks out of the switch block. This will stop the execution of more code and case testing inside the block. Usually, a break should be put in each case statement.
 
-*example*
-
-What is the output of this code?
+*What is the output of this code?*
 
 ```bash
 var x = 3;
@@ -161,7 +159,7 @@ switch (x) {
 - "Case 1" and "Case 2" looks like a numbering system for the cases, but it's not.
 - Case 1 means "Does x match 1?" x is 3, so it doesn't match 1. So the document won't write x.
 - Case 2 means "Does x match 2?" x is 3, so it doesn't match 2 So the document won't write x+2.
-- So the default will execute: The document will write x + 5 (3 + 5), which is 8.
+- The default will execute: The document will write x + 5 (3 + 5), which is 8.
 
 
 #### The default Keyword
@@ -226,6 +224,7 @@ for (; i < 10; ) {
 }
 ```
 *example*
+
 ```bash
 var i = 1;
 for (k=1; k<10; k++){
@@ -244,13 +243,13 @@ while (condition) {
 }
 ```
 *example*
-
+```bash
 var i=0;
   while (i<=10) {
     document.write(i + "<br />");
     i++;
 }
-
+``` . 
 The loop will continue to run as long as i is less than, or equal to, 10. Each time the loop runs, it will increase by 1.
 This will output the values from 0 to 10.
 
@@ -279,6 +278,7 @@ do {
 while (condition);
 ```
 *example*
+
 ```bash
 var i=20;
 do { document.write(i + "<br />");
@@ -309,6 +309,7 @@ for (i = 0; i <= 10; i++) {
    document.write(i + "<br />");
 }
 ```
+
 #### **Continue**
 
 The continue statement breaks only one iteration in the loop, and continues with the next iteration.
