@@ -13,6 +13,7 @@
 Use if to specify a block of code that will be executed if a specified condition is true.
 
 *syntax*
+
 ```bash
 if (condition) {
    statements
@@ -25,8 +26,8 @@ var myNum1 = 7;
 var myNum2 = 10;  
 if (myNum1 < myNum2) {  
    alert("JavaScript is easy to learn.");  
-}
-```
+}```
+
 ### The else statement
 
 *syntax*
@@ -41,7 +42,7 @@ else {
 ```
 
 *example*
-
+```bash
 var myNum1 = 7;
 var myNum2 = 10;
 if (myNum1 > myNum2) {
@@ -58,8 +59,8 @@ else {
 var age = 25;
 if (age >= 18) {
    alert("Allowed.");
-} <br/>
-else {<br/>
+}
+else {
    alert("Not allowed.");
 }
 ```
