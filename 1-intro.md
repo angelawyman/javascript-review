@@ -1,3 +1,14 @@
+TOC Javascript Modules
+
+1 JavaScript Overview
+- Naming Variables
+- Data Types and Operators
+2 Conditionals and loops
+3 Functions
+4 Objects
+5 Arrays
+6 DOM
+7 ECMA script and Resources
 
 ---
 # JavaScript Review
@@ -34,7 +45,7 @@ Tip: you no longer need to indicate language or type. Don't do this!!
 Inside the `<head>` tag between `<script>` and `</script>`
 
 ### Where else? Inside the body
-If the script is placed in the head section, this will be executed before the `<body>` is rendered. Often the best strategy is instead to put the <script> element at the **bottom** of the `<body>` element to let the web page fully load in the browser window. Placing it here can also improve page load, because the HTML display is not blocked while waiting for scripts to load.
+Notice that if the script is placed in the head section, it will be executed before the `<body>` is rendered. It therefore can be a good idea to place scripts at the **bottom** of the `<body>` element to let the web page fully load in the browser window. This can also improve page load time, because the HTML display is not blocked while waiting for scripts to load.
 
 ### And? Link to External file
 For longer pages of code link to an external created custom script file in the head.   
@@ -127,13 +138,13 @@ D. %%this is a comment
 ### Variables
 
 Variables are containers for storing data values. The value of a variable can change throughout the program. Information stored in variables, such as a username, account number, or even a personalized greeting can then be found in memory.<br/>
-Variables also allow us to label data with a descriptive name, so our code can be more easily understood. 
+Variables also allow us to label our data with a descriptive name, so our code can be more easily understood. 
 
 There are only a few things you can do with variables:
 
 - You can create and descriptively name your variable.
-- Store the variable's data and update it.
-- Retrieve the information stored in a variable.
+- You can store the variable's data and update it.
+- Laslty, you can retrieve the information stored in a variable.
 
 `var newVariable = 10;`
 
@@ -147,12 +158,20 @@ Now that I have declared my variable I can assign it.
 
 `favoriteFood = "artichokes";`
 
+This is how I invoke it:
+
+`favoriteFoods;`
+`//this will return the value artichokes`
 
 Later I can reassign the value and output the value:
+
 ```bash
 var favoriteFood = 'bananas';
 document.write(favoriteFood);
 ```
+
+Question: What answer will I get now if I invoke my variable?
+
 
 **Rules to naming variables:**
 * The first character for a variable can be letters, underscores, or dollar signs. Subsequent characters may be numbers, letters, underscores, or dollar signs. Numbers are not allowed as the first character.
@@ -190,6 +209,7 @@ console.log(i);
 ```
 
 *ECMAScript 6*
+
 ```bash
 for (let j = 1; j < 5; j++) 
   console.log(j);
@@ -202,26 +222,31 @@ console.log(j);
 
 Using const allows you to define a variables that cannot be changed to new values. A const can’t be declared without a value, unlike a var or a let variable.
 
-*example*
+*oops*
+
 ```bash
 var x; // valid
 let y; // valid
 const z; // will throw an error
 ```
 
-*example*
+*good use of const*
+
 ```bash
 const myDivorce = '14.12.1987';
 const momBirthday = '15.12';
 ```
 
-*example*
+*oops*
+
 ```bash
 const name = 'Casey';
 name = 'Parker';
 // this won't work
 ```
+
 *but this will work*
+
 ```bash
 const person = { name: 'Casey' }; 
 person.name = 'Parker';
@@ -229,6 +254,7 @@ person.name = 'Parker';
 ```
 
 ### Summary
+
 We can declare variables to store data by using the var, let, or const keywords.
 
 * let – is a modern variable declaration. The code must be in strict mode to use let in Chrome (V8).
@@ -242,9 +268,9 @@ We can declare variables to store data by using the var, let, or const keywords.
 **Exercise 1**
 
 1. Declare two variables: admin and name.
-2. Assign the value "John" to name.
+2. Assign the value "Cher" to name.
 3. Copy the value from name to admin.
-4. Show the value of admin using alert (must output “John”).
+4. Show the value of admin using alert (must output “Cher”).
 
 
 **Exercise 2 - Giving the right name**
@@ -269,6 +295,7 @@ const AGE = someCode(BIRTHDAY); // make uppercase?
 ### Data Types
 
 Data type refers to the type of values a program can accept. JavaScript variables can hold many data types, such as numbers, strings, arrays, and more.  Six of the data types are called “primitive”, because their values contain only a single thing. Symbol is new to  ECMAScript 6, Null and Undefined are also data types. By contrast, objects are used to store keyed collections of various data.
+
 ```bash
 let x; 
 x = 1;   // x is a number  
@@ -293,7 +320,6 @@ The Boolean value of 0 (zero), null, undefined, empty string is false. Everythin
 ### Arithmetic Operators
 `+, -, *, /, %, ++, --`
 
-*example*
 ```bash
 var x = 10 + 5 (100/5);
 document.write(x);
@@ -301,8 +327,18 @@ document.write(x);
 ```
 Modulus (%) operator returns the division remainder (what is left over).
 
+EMDAS is an acronym for the words parenthesis, exponents, multiplication, division, addition, subtraction. This helps you determine what the order of operations is for more complex probelms, Given two or more operations in a single expression, the order of the letters in PEMDAS tells you which to calculate first and so on until the calculation is complete. THe mnemonic device for PEMDAS  is Please Excuse My Dear Aunt Sally.
+
+Below the mathematical order is respected: first 5 * 3 is calculated, then 9 + 15. 
+
+*example*
+```bash
+alert(9 + 5 * 3)
+```
+
 ### Assignment Operators
 `=, +=, -=, *=, /=, %=`
+
 ```bash
 var result= 20;
 result *= 5;
@@ -312,7 +348,12 @@ answer: 100;
 ### Comparison Operators
 `==, ===, !=, !==, >, >=, <, <=`
 
+= One equal sign is an assignment.
+== Two equal signs is a comparison
+=== Three equal signs is a comparison and also checks if they are the same type.
+
 Comparison operators are used in logical statements to determine equality or difference between variables or values and  they always return true or false.
+
 ```bash
 5 == 10 false - equal to
 5===10 false - identical
@@ -323,6 +364,12 @@ Comparison operators are used in logical statements to determine equality or dif
 10<5 false - less than
 10<=5 false - less than or equal to
 ```
+
+```bash
+alert(window.innerWidth > 400);
+//what is the output? or what is the value returned?
+```
+
 ### Logic Operators
 `&&, !!, ! ` = and, or, not
 
@@ -333,8 +380,10 @@ Logical operators allow you to connect as many expressions as you wish.
 `var isAdult = (age < 18) ? "Too young": "Old enough";`
 
 ### String Operators
+
 The most useful operator for strings is concatenation, represented by the + sign. 
 Concatenation can be used to build strings by joining together multiple strings, or by joining strings with other types. Notice you need to provide spaces before your ending quotes and the + sign for this to read properly.
+
 ```bash
 var myString1 = "I am learning ";  
 var myString2 = "JavaScript with Professor Angela.";  
