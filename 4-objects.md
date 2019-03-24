@@ -31,25 +31,26 @@ By now you are familiar with alerts. An alert is a method of a window object.
 window.alert('For realz');
 ```
 
-Because window is the top-level object in the browser you can access the properties and methods directly. So `alert();` is the same as `window.alert();`
+Because window is the top-level object in the browser you can access the properties and methods directly.  
+So `alert();` is the same as `window.alert();`
 
 *example - create an object*
 ```bash
 let user = {
     name: "Rafael",   
     age: 30, 
-    turtle: true;
-    "likes Leonardo": false;  // note: a multi-word property name must be quoted
+    turtle: true,
+    "likes Leonardo": false  // note: a multi-word property name must be quoted
 };
 ```
 
 #### Dot Notation
 
 Property values are accessible using the dot notation:
-
-`alert( user.name ); // Rafael`
-`alert( user.age ); // 30`
-
+```bash
+alert( user.name ); // Rafael
+alert( user.age ); // 30
+```
 
 The exception is this won't work with multi-word property names.
 
@@ -67,16 +68,17 @@ alert(user["likes Leonardo"]);
 ```
 
 To delete properties, write like so:
-
-`delete user.age;`
-`delete user["likes Leonardo"];`
+```bash
+delete user.age;
+delete user["likes Leonardo"];
+```
 
 Variables are objects, too. That means they will also have properties and methods.
 
 Our earlier variable favoriteFoods has a property called length.
-
-`alert(favoriteFoods.length);`
-
+```bash
+alert(favoriteFoods.length);
+```
 It also has methods. Push here adds an item to your array.
 
 ```bash
@@ -102,20 +104,21 @@ alert(favoriteFoods.includes('marshamallows'));
 #### Using Square Brackets for Computed Properties
 
 *example -the property name is taken from the variable*
-
-`let fruit = prompt("Which fruit to buy?", "apple");`
-`let bag = {`<br/>
-`  [fruit]: 5, `<br/>
-`};`<br/>
-`alert( bag.apple ); `<br/>
-`// outputs 5 if fruit = "apple"`
+```bash
+let fruit = prompt("Which fruit to buy?", "apple");
+let bag = {
+  [fruit]: 5, 
+};
+alert( bag.apple ); 
+// outputs 5 if fruit = "apple"`
+```
 
 This is the same as:
-
-`let fruit = prompt("Which fruit to buy?", "apple");`<br/>
-`let bag = {};`<br/>
-`bag[fruit] = 5;`<br/>
-
+```bash
+let fruit = prompt("Which fruit to buy?", "apple");
+let bag = {};
+bag[fruit] = 5;
+```
 
 **Exercise 4 - The window object**
 
