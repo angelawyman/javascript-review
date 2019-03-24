@@ -1,14 +1,14 @@
 TOC Javascript Modules
 
-1 JavaScript Overview
+1. JavaScript Overview
 - Naming Variables 
-- Data Types and Operators  
-2 Conditionals and loops  
-3 Functions . 
-4 Objects . 
-5 Arrays . 
-6 DOM . 
-7 ECMA script and Resources
+- Data Types and Operators<br/>   
+2. Conditionals and loops<br/>   
+3. Functions<br/> 
+4. Objects<br/>  
+5. Arrays<br/> 
+6. DOM<br/> 
+7. ECMA script and Resources
 
 ---
 # JavaScript Review
