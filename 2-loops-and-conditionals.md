@@ -28,6 +28,12 @@ if (myNum1 < myNum2) {
    alert("JavaScript is easy to learn.");  
 }
 ```
+Try out
+```bash
+if (window.location.hostname != 'google.com') {
+  alert('🤗')
+}
+```
 
 ### The else statement
 
@@ -63,6 +69,14 @@ if (age >= 18) {
 }
 else {
    alert("Not allowed.");
+}
+```
+
+```bash
+if (window.location.hostname == 'google.com') {
+  alert('Welcome to Google! 🤗')
+} else {
+  alert('Please come back soon! 😉')
 }
 ```
 
@@ -207,14 +221,19 @@ for (statement 1; statement 2; statement 3) {
 *example*
 
 ```bash
-for (i=1; i<=5; i++) {
-   document.write(i + "<br />");
+for (var i = 1; i<=5; i++) {  
+   document.write(i + "<br />");  
 }
 ```
-* Statement 1 sets a variable before the loop starts (var i = 1).
-* Statement 2 defines the condition for the loop to run (i must be less than or equal to 5). If you omit statement 2, you must provide a break inside the loop. Otherwise, the loop will never end.
-* Statement 3 increases a value (i++) each time the code block in the loop has been executed.
-- Statement 3 is also optional, and it can be omitted if you increment your values inside the loop.
+
+* (var i = 1) is the **initial state** It sets a variable before the loop starts (var i = 1) to one.
+* i<=5; is a **conditional statement**. It defines the condition for the loop to run (it must be less than or equal to 5).  
+On every iteration of the loop, we check this comparison.  
+If it's true, we execute the code in the block.  
+If it's false, we exit the loop.  
+If you omit this statement, then you must provide a break inside the loop. Otherwise, the loop will never end.
+* i++ is the **increment expresssion**. It increases a value (i++) each time the code block in the loop has been executed.  
+Statement 3 is also optional, and it can be omitted if you increment your values inside the loop.
 
 ```bash
 var i = 0;
