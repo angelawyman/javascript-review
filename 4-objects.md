@@ -47,6 +47,7 @@ let user = {
 #### Dot Notation
 
 Property values are accessible using the dot notation:
+
 ```bash
 alert( user.name ); // Rafael
 alert( user.age ); // 30
@@ -79,7 +80,7 @@ Our earlier variable favoriteFoods has a property called length.
 ```bash
 alert(favoriteFoods.length);
 ```
-It also has methods. Push here adds an item to your array.
+It also has methods. Push here will add an item to your array.
 
 ```bash
 var favoriteFoods = ['artichokes', 'bananas', true];
@@ -91,7 +92,7 @@ alert(favoriteFoods);
 ```bash
 var favoriteFoods = ['artichokes', 'bananas', true, 'pizza'];
 alert(favoriteFoods.includes('marshamallows'));
-// will return false
+\\ will return false
 ```
 **Review**
 
@@ -122,6 +123,13 @@ bag[fruit] = 5;
 
 **Exercise 4 - The window object**
 
+What is window? You can find out by using the `typeof` method.
+```bash
+console.log(typeof window);
+```
+Answer: window is a JavaScript object.  
+To access the properties of window, you use a dot . to specify.
+
 Try out
 
 `alert(window.innerWidth);`
@@ -131,21 +139,9 @@ Now try out
 `alert(window.innerHeight);`
 
 
-What is window? You can find out by using the typeof method
-
-'console.log(typeof window);'
-
-
-Answer: window is a JavaScript object.
-
-
-innerWidth is a property of the window object. 
-To access this property, you used a dot . to specify you wanted the innerWidth that exists within the window object.
-
-The JavaScript object is basically a type that contains other things.
-
-For example, window also has:
+For example, window also has these properties:
 
 - window.origin which is a string
 - window.scrollY which is a number \\will give you the current scroll position.
 - window.location which is an object
+- window.innerWidth which is a number
