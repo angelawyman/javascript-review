@@ -379,10 +379,11 @@ Logical operators allow you to connect as many expressions as you wish.
 
 `var isAdult = (age < 18) ? "Too young": "Old enough";`
 
-### String Operators
+### String Operators and Concatenation
 
 The most useful operator for strings is concatenation, represented by the + sign. 
-Concatenation can be used to build strings by joining together multiple strings, or by joining strings with other types. Notice you need to provide spaces before your ending quotes and the + sign for this to read properly.
+Concatenation can be used to build strings by joining together multiple strings, or by joining strings with other types. Notice watch out for spaces before your ending quotes and the + sign, you will need to provide them for this to read properly.
+
 
 ```bash
 var myString1 = "I am learning ";  
