@@ -12,24 +12,27 @@
 ### The if statement
 Use if to specify a block of code that will be executed if a specified condition is true.
 
-*syntax*
+
 
 ```bash
+//syntax
 if (condition) {
    statements
 }
 ```
-*example*
+
 
 ```bash
+//example
 var myNum1 = 7;  
 var myNum2 = 10;  
 if (myNum1 < myNum2) {  
    alert("JavaScript is easy to learn.");  
 }
 ```
-Try out
+
 ```bash
+//try this out
 if (window.location.hostname != 'google.com') {
   alert('🤗')
 }
@@ -80,6 +83,21 @@ if (window.location.hostname == 'google.com') {
 }
 ```
 
+```bash
+//basic
+
+if (userName) {
+  logIn (userName);
+}
+ else {
+   signUp ();
+}
+```
+
+```bash
+// note: this can also be written like so
+ userName && logIn (userName) || signUp ();
+```
 ### The else if statement
 You can use the else if statement to specify a new condition if the first condition is false.
 You can write as many else if statements as you need.
