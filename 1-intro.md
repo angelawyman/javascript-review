@@ -172,6 +172,12 @@ document.write(favoriteFood);
 
 Question: What answer will I get now if I invoke my variable?
 
+You can declare many variables in one statement.
+
+```bash
+var person = "Ursain Bolt", olympicWinner = "Gold", prize = 200;
+document.getElementById("demo").innerHTML = olympicWinner;
+```
 
 **Rules to naming variables:**
 * The first character for a variable can be letters, underscores, or dollar signs. Subsequent characters may be numbers, letters, underscores, or dollar signs. Numbers are not allowed as the first character.
