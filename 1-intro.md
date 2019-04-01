@@ -41,7 +41,7 @@ Q3.) What tag contains the JavaScript code?
 - D. ~~code~~
 
 > Tip: you no longer need to indicate language or type. 
-```bash
+```javascript
 Don't do this!!    
 <script language="javascript" type="text/javascript"></script>
 ```
@@ -56,7 +56,7 @@ Notice that if the script is placed in the head section, it will be executed bef
 ## And where else? Link to an External file
 For longer pages of code link to an external created custom script file in the head. You may have several javascript files. Also, you can link to hosted libraries, such as JQuery:
 
-```bash
+```javascript
 <script src="bowser-demo.js"></script>
 <script src="modernizer.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -79,14 +79,14 @@ For longer pages of code link to an external created custom script file in the h
 - The document.write() function will write a string into our HTML document. This function can be used to add text.
 - The console.log() function will write into our console developer tools panel. The keyboard shortcut Ctrl Option J (on Mac) or Ctrl Shift J (on Windows).
 
-```bash
+```javascript
 <script>
   document.write("Hello World!");
 </script>
 ```
 You can also format the text with HTML.
 
-```bash
+```javascript
 <script>
   document.write("<h1>Hello World!</h1>");
 </script>
@@ -106,7 +106,7 @@ Comments are used to describe and explain what the code is doing.
 Comments are ignored by the browser and are not executed.
 
 Use double slashes for single line comments.
-```bash
+```javascript
 <script>
    // This is a single line comment
    alert("This is an alert box!");
@@ -115,7 +115,7 @@ Use double slashes for single line comments.
 
 Use slash star and star slash pairings for multiple comments
 
-```bash
+```javascript
   <script> 
     /* This code 
     creates an 
@@ -125,7 +125,7 @@ Use slash star and star slash pairings for multiple comments
 ```
 ---
 **Q5.) Which one of these looks like the single line comment?**    
-```bash
+```javascript
 A. // this is a comment    
 B. <!--this is a comment-->
 C. **this is a comment**
@@ -147,7 +147,7 @@ D. %%this is a comment
 
 Data type refers to the type of values a program can accept. JavaScript variables can hold many data types, such as numbers, strings, arrays, and more.  Six of the data types are called “primitive”, because their values contain only a single thing. Symbol is new to  ECMAScript 6, Null and Undefined are also data types. By contrast, objects are used to store keyed collections of various data.
 
-```bash
+```javascript
 let x; 
 
 x = 1;   
@@ -172,14 +172,14 @@ x = true
 
 You can also escape your quotes like the following for double quotes:` \" ` or ` \'` inside of single quotes.
 
-```bash
+```javascript
 var sayHello = 'Hello world! \'I am a JavaScript programmer.\' ';  
 document.write(sayHello);
 ```
 ---
 ### Booleans - True or False Values
 The Boolean value of 0 (zero), null, undefined, empty string returns false. Everything with a "real" value is true.
-```bash
+```javascript
 10 = 5 + 5;
 //<==outputs true
 
@@ -190,13 +190,13 @@ The Boolean value of 0 (zero), null, undefined, empty string returns false. Ever
 ### Arithmetic Operators
 `+, -, *, /, %, ++, --`
 
-```bash
+```javascript
 var x = 10 + 5;
 document.write(x);
 // outputs 15
 ```
 The modulus (%) operator returns the division remainder (what is left over).
-```bash
+```javascript
 var y = 33 % 10;
 // outputs 3
 ```
@@ -206,7 +206,7 @@ PEMDAS is an acronym for the words parenthesis, exponents, multiplication, divis
 Below the mathematical order is respected: first 5 * 3 is calculated, then 9 + 15. 
 
 *example*
-```bash
+```javascript
 alert(9 + 5 * 3);
 //this will output what?
 ```
@@ -214,7 +214,7 @@ alert(9 + 5 * 3);
 ### Assignment Operators
 `=, +=, -=, *=, /=, %=`
 
-```bash
+```javascript
 var result= 20;
 result *= 5;
 //<== outputs 100;
@@ -223,7 +223,7 @@ result *= 5;
 ### Relational Comparison Operators
 `==, ===, !=, !==, >, >=, <, <=`
 
-```bash
+```javascript
 == equal to
 === equal to 
 !== not equal to
@@ -241,7 +241,7 @@ Comparison operators — operators that compare values and return true or false.
 Comparison operators are used in logical statements to determine equality or difference between variables or values.
 
 
-```bash
+```javascript
 5 == 10 false - equal to
 5===10 false - identical
 5!=10 true - not equal to
@@ -252,7 +252,7 @@ Comparison operators are used in logical statements to determine equality or dif
 10<=5 false - less than or equal to
 ```
 
-```bash
+```javascript
 alert(window.innerWidth > 400);
 //<== what is the output? or what will be the value returned?
 ```
@@ -262,7 +262,7 @@ alert(window.innerWidth > 400);
 
 Logical operators allow you to connect as many expressions as you wish.
 
-```bash
+```javascript
 var isTrue = ('yellow' === 'green') && (4 >= 4);
 //<== here yellow is not equal to green so it is false, while 4 is greater than or equal to 4 which is true however with the && operands both expressions must evaluate to true so this expression is falsy and will evaluate to false
 ```
@@ -271,7 +271,7 @@ Instead, how would you make this statement evaluate to true?
 ---
 ### Conditional Ternary Operator
 
-```bash
+```javascript
 var isAdult = (age < 18) ? "Too young": "Old enough";
 ```
 A ternary operator is an operator that takes three arguments. The arguments and result can be of different types. JavaScript assigns a value to a variable based on some condition and if the condition is true, the ternary operator returns the value of the first expression; otherwise, it returns the value of the second expression.
@@ -284,7 +284,7 @@ The most useful operator for strings is concatenation, represented by the + sign
 Concatenation can be used to build strings by joining together multiple strings, or by joining strings with other types. Notice watch out for spaces before your ending quotes and the + sign, you will need to provide these for your string to read properly.
 
 
-```bash
+```javascript
 var myString1 = "I am learning ";  
 var myString2 = "JavaScript with Professor Angela.";  
 document.write(myString1 + myString2);  
@@ -308,7 +308,7 @@ There are only a few things you can do with variables:
 
 Above we created a variable called 'bowserFavNumber' and assigned it the number 10. You could also declare a variable without a value, like below. 
 
-```bash
+```javascript
 var favoriteFood;
 ```
 
@@ -316,18 +316,18 @@ In this case, maybe the value might require some calculation, something that wil
 
 Now that I have declared my variable I can assign it.
 
-```bash
+```javascript
 favoriteFood = "artichokes";
 ```
 
 This is how to invoke it:
-```bash
+```javascript
 favoriteFoods;  
 //<==this will display or return the value artichokes
 ```
 Later you can reassign the value and output the value. Bowser decided he likes bananas better.
 
-```bash
+```javascript
 var favoriteFood = 'bananas';
 document.write(favoriteFood);
 ```
@@ -336,7 +336,7 @@ Answer: what will I get now if I invoke my variable?
 
 Note: you can declare many variables in just one statement.
 
-```bash
+```javascript
 var person = "Ursain Bolt", olympicWinner = "Gold", prize = 200;
 document.getElementById("demo").innerHTML = olympicWinner;
 ```
@@ -354,7 +354,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_gramma
 <br/>
 
 *examples of incorrect variable names*
-```bash
+```javascript
 let my favorite_cat; 
 //<== can't have a space  
 
@@ -377,7 +377,7 @@ let is the successor to var. Although var is still available, let limits the sco
 
 *old style ES5*
 
-```bash
+```javascript
 for (var i = 1; i < 5; i++) { 
   console.log(i);
 }
@@ -389,7 +389,7 @@ console.log(i);
 
 *ECMAScript 6*
 
-```bash
+```javascript
 for (let j = 1; j < 5; j++) 
   console.log(j);
 }
@@ -403,7 +403,7 @@ Using const allows you to define a variables that cannot be changed to new value
 
 *oops*
 
-```bash
+```javascript
 var x; // valid
 let y; // valid
 const z; // will throw an error
@@ -411,14 +411,14 @@ const z; // will throw an error
 
 *a good use of const*
 
-```bash
+```javascript
 const myDivorce = '14.12.1987';
 const momBirthday = '15.12';
 ```
 
 *oops*
 
-```bash
+```javascript
 const name = 'Dalai';
 name = 'Lama';
 // this won't work
@@ -426,7 +426,7 @@ name = 'Lama';
 
 *but this will work*
 
-```bash
+```javascript
 const person = { name: 'Dalai' }; 
 person.name = 'Lama';
 // as we're not changing the object named 'person' this works.
@@ -461,12 +461,12 @@ We can declare variables to store data by using the var, let, or const keywords.
 **Exercise 3 - Uppercase const**
 
 1. Examine the following code:
-```bash
+```javascript
 const birthday = '18.04.1982';
 const age = someCode(birthday);
 ```
 Here we have a constant birthday date and the age is calculated from birthday with the help of some code (it is not provided for shortness, and because details don’t matter here). Would it be right to use upper case for birthday? For age? Or even for both?
-```bash
+```javascript
 const BIRTHDAY = '18.04.1982'; // make uppercase?
 const AGE = someCode(BIRTHDAY); // make uppercase?
 ```
@@ -476,7 +476,7 @@ const AGE = someCode(BIRTHDAY); // make uppercase?
 Last quiz!
 
 **Q6). What will be the output of the following code?**
-```bash
+```javascript
 var x = "50";
 var y = "100";
 document.write(x+y);
