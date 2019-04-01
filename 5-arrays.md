@@ -1,12 +1,21 @@
-TOC  
+~ Table of Contents ~
 
-ARRAYS
 
-* Properties and Methods
-* Associative Arrays  
+Module: Arrays   
+- [Using Array Literals](#using-array-literals)
+- [Indexing Arrays](#indexing-arrays)
+- [Concatenation with Arrays](#concatenation-with-arrays)
+- [Associative Arrays](#associative-arrays)  
+- [Properties and Methods](#properties-and-methods)
+- [Extra Credit! Lots More Methods](#extra-credit-lots-more-methods)
 
-The Math Object  
-The Date Object
+
+[The Math Object](#the-math-object)  
+[The Date Object](#the-date-object)  
+
+---
+Further References  
+[Mozilla on Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 ---
 ## Module: Arrays
@@ -27,7 +36,7 @@ var courses = new Array("Korean", "Japanese", "Chinese");
 ```
 
 ----
-### Using Array Literal
+### Using Array Literals
 
 For simplicity, readability and execution speed, you can use the array literal method.👇
 
@@ -40,6 +49,7 @@ var courses = ["Korean", "Japanese", "Chinese"];
 *Q.) What two keywords do you need to create an Array?*  
 <br/>
 
+---
 ### Indexing Arrays
 
 * You refer to an array element by referring to the index number written in square brackets.
@@ -48,7 +58,7 @@ var courses = ["Korean", "Japanese", "Chinese"];
 ```javascript
 var courses = [ "Korean", "Japanese", "Chinese" ]; 
 var course = courses[1];
-//<== will output to what?
+//<== what will be the output?
 ```
 
 ```javascript
@@ -64,7 +74,7 @@ var listNew = new Array(3, 6, 8);
 document.write(listNew[1]);
 ```
 
-*Q.) What happens if you ask for an array item that doesn't exist?*
+*Q.) What happens when you ask for an array item that doesn't exist?*
 
 ```javascript
 document.write(listNew[10]);
@@ -73,14 +83,15 @@ document.write(listNew[10]);
 
 
 **How else can you create an Array?**
-solo learn example
+Note: this is a solo learn example which is old school style.
+
 ```javascript
 var courses = new Array(3);
   courses[0] = "Korean";
   courses[1] = "Japanese";
   courses[2] = "Chinese";
 ```
-but, better syntax to do this:
+But, better syntax to do this style:
 
 ```javascript
 var courses = [ ];
@@ -89,46 +100,36 @@ var courses = [ ];
   courses[2] = "Chinese";
 document.write(courses);
 ```
-or use a literal
+Or the most common approach, use a literal array:
+```javascript  
 `var courses = [ "Korean", "Japanese", "Chinese" ]; `
+```
 
-how to run through the array
+How to run through the array
 
 ```javascript
 var courses = ["Korean", "Japanese", "Chinese"];
 var x = courses.length;
 for (var i=0; i<x; i++){
-	document.write(i +1 + ". " + courses[i] + " ");
-	document.write("<br>");
+  document.write(i +1 + ". " + courses[i] + " ");
+  document.write("<br>");
 };
 ```
-
+### Summary
 * You can declare an array, tell it the number of elements it will store, and add the elements later. 
 * An array is a special type of object.
 * An array uses numbers to access its elements, and an object uses names to access its members.
-* You can add dynamically as many elements as you need to.
+* You can dynamically add as many elements as you need to.
 
 
 
 *Q.) Please insert the missing characters to output the third member of the array:*
-
-'document.write(example____);`
+`'document.write(example____);`
 
 
 
 ---
-### The Length Property
-
-JavaScript arrays have useful built-in properties and methods.
-An array's length property returns the number of it's elements.
-
-```javascript
-var courses = ["Korean", "Japanese", "Chinese"]; 
-document.write(courses.length);
-// will output 3
-```
----
-### Combining Arrays- Concatenation
+### Concatenation with Arrays
 
 JavaScript's concat() method allows you to join arrays and create an entirely new array.
 
@@ -140,89 +141,67 @@ var courses = c1.concat(c2);
 
 *Exercise*
 
-Create a variable, assign it an array of your favorite deserts.
-Now write an alert that will show each item.
+*Create a variable, assign it an array of your favorite deserts.
+Now write an alert that will show each item.*
 
-Answer:
+
+Exercise example:
 ```javascript
-var fav_desserts = ['cheesecake', 'chocolate', 'apple pie'];
+var fav_desserts = ['cheesecake', 'chocolate mousse', 'strawberry rhubarb pie'];
 for (var i = 0; i < fav_desserts.length; i++) {
   alert(fav_desserts[i]);
 }
 ```
 
-Alternative answer: this uses the forEach method
+Another example:   
+- the alert() function (or window method)
+- the forEach() array method
+
 ```javascript
-var my_things = [2 + 5, 'samurai', true];
+var my_things = [2 + 5, 'sponge bob', true];
 my_things.forEach(function(item) {
   alert(item);
 });
 ```
-So far, we've used a functions and a method:
 
-- the alert() function (or window method)
-- the forEach() array method
+
 
 ---
-### Associative Array
+### Associative Arrays
 
 You can use the named array syntax, to produce an object.
 Now, person is treated as an object, instead of being an array.
-The named indexes "name" and "age" become properties of the person object. Why would you want to do this, really?
+The named indexes "name" and "age" become properties of the person object. Why might you want to do this?
 ```javascript
 var person = []; 
-person["name"] = "John";
-person["age"] = 46;
+  person["name"] = "John";
+  person["age"] = 46;
 document.write(person["age"]);
 // will output "46"`
 ```
 ### Summary
 
-The only difference between an Object and an Array in JS is that Arrays use numerical keys and objects use names. So an Array is really just an object using numerical keys.
----
-### The Math Object
-
-The Math object allows you to perform mathematical tasks, and includes several properties.
-
-* E Euler's Constant
-* PI value of pi
-* LN2 Natural log of the value 2
-* LN10 Natural log of the value 10
-* LOG2E The base 2 log of Euler's constant
-* LOG10E The base 10 log of Euler's constant
-
-```javascript
-document.write(Math.PI);
-// outputs 3.141592653589793
-```
-
-The Math object contains a number of methods that are used for calculations:
+The only difference between an Object and an Array in JavaScript is that arrays use numerical keys and objects use names. So in a way, an array is can be kind of considered as just an object using numerical keys.
 
 ---
-### Date Object
+## Properties and Methods
+### The Length Property
 
-When a Date object is created, a number of methods make it possible to perform operations on it.
+JavaScript arrays have useful built-in properties and methods. 
+
+Here, an array's length property returns the number of it's elements.
 
 ```javascript
-var d = new Date();
-var hours = d.getHours();
-//hours is equal to the current hour
+var courses = ["Korean", "Japanese", "Chinese"]; 
+document.write(courses.length);
+// will output 3
 ```
-```javascript
-function printTime() {
-  var d = new Date();
-  var hours = d.getHours();
-  var mins = d.getMinutes();
-  var secs = d.getSeconds();
-  document.body.innerHTML = hours+":"+mins+":"+secs;
-}
-setInterval(printTime, 1000);
-```
+---
+## Extra Credit!! Lots More Methods
 
+Refer to [Mozilla's ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) long extensive list of built-in methods on arrays for more detail. Here we will be covering a bunch of methods.
 
 ---
-## Extra Credit Working with Arrays
-
 ### toString() method
 The Javasript method toString() converts an array to String of(comma separated) array values.
 
@@ -268,6 +247,7 @@ var x = ["one","two","three","four"];
 var y = x.shift();//Removes first element(one) from x
 var z = x;
 ```
+---
 ### the unshift() method 
 Will add a new element to an array(at the beginning), and "unshifts" older elements.
 
@@ -289,6 +269,7 @@ var y = x;
 ```
 
 >NOTICE: using delete() on array elements leaves undefined whole in the array. choose to use pop() or shift() instead.
+
 ---
 ### the splice() method
 Can be used to add new items to an array.
@@ -361,3 +342,43 @@ var x = ["E","B","C","D","A"];
 var y = x.sort();
 var z = x.reverse();
 ```
+---
+## The Math Object
+
+The Math object allows you to perform mathematical tasks, and includes several properties.
+
+* E Euler's Constant
+* PI value of pi
+* LN2 Natural log of the value 2
+* LN10 Natural log of the value 10
+* LOG2E The base 2 log of Euler's constant
+* LOG10E The base 10 log of Euler's constant
+
+```javascript
+document.write(Math.PI);
+// outputs 3.141592653589793
+```
+
+The Math object contains a number of methods that are used for calculations:
+
+---
+## The Date Object
+
+When a Date object is created, a number of methods make it possible to perform operations on it.
+
+```javascript
+var d = new Date();
+var hours = d.getHours();
+//hours is equal to the current hour
+```
+```javascript
+function printTime() {
+  var d = new Date();
+  var hours = d.getHours();
+  var mins = d.getMinutes();
+  var secs = d.getSeconds();
+  document.body.innerHTML = hours+":"+mins+":"+secs;
+}
+setInterval(printTime, 1000);
+```
+---
