@@ -1,20 +1,31 @@
+TOC Javascript Modules
+
+1. JavaScript Overview
+    - Data Types and Operators<br/>  
+    - Naming Variables 
+2. Conditionals and Loops<br/>   
+3. Functions<br/> 
+4. OBJECTS  
+5. Arrays<br/> 
+6. DOM<br/> 
+7. ECMA Script and Resources
 
 
 ## Module: Objects
 
-***
+---
 
 #### References 
 
-- [W3Schools] (https://www.w3schools.com/js/js_functions.asp) 
-- [Javascript Info] (https://javascript.info/object)
+- [W3 Schools](https://www.w3schools.com/js/js_functions.asp) 
+- [Javascript Info](https://javascript.info/object)
 
-
+---
 ## How to create an object:
 
-*syntax - you can use either*
+```javascript
+- syntax: you can use either -
 
-```bash
 let user = new Object(); // "object constructor" syntax
 let user = {}; // "object literal" syntax- this is more commonly used
  ```
@@ -27,7 +38,7 @@ The methods of our object can include things the cat can do, actions such as meo
 
 By now you are familiar with alerts. An alert is a method of a window object.
 
-```bash
+```javascript
 window.alert('For realz');
 ```
 
@@ -35,33 +46,37 @@ Because window is the top-level object in the browser you can access the propert
 So `alert();` is the same as `window.alert();`
 
 *example - create an object*
-```bash
+```javascript
 let user = {
     name: "Rafael",   
     age: 30, 
     turtle: true,
-    "likes Leonardo": false  // note: a multi-word property name must be quoted
+    "likes Leonardo": false  // usually leave the last comma off
+    // note: the multi worded string must be quoted
 };
 ```
-
-#### Dot Notation
+---
+### Dot Notation
 
 Property values are accessible using the dot notation:
 
-```bash
-alert( user.name ); // Rafael
-alert( user.age ); // 30
+```javascript
+alert( user.name ); 
+// Rafael
+
+alert( user.age ); 
+// 30
 ```
 
 The exception is this won't work with multi-word property names.
 
-*here is a multi-word property name that gives a syntax error*
+*Here is a multi-word property name that gives a syntax error*
 
 `user.likes Leonardo = true`
 
 For these cases, use square bracket notation:
 
-```bash
+```javascript
 let user = {};
 user["likes Leonardo"] = true;
 alert(user["likes Leonardo"]);
@@ -69,32 +84,38 @@ alert(user["likes Leonardo"]);
 ```
 
 To delete properties, write like so:
-```bash
+
+```javascript
 delete user.age;
 delete user["likes Leonardo"];
 ```
 
 Variables are objects, too. That means they will also have properties and methods.
 
-Our earlier variable favoriteFoods has a property called length.
-```bash
-alert(favoriteFoods.length);
-```
-It also has methods. Push here will add an item to your array.
+Our earlier variable favoriteFoods has an innate property called length.
 
-```bash
+```javascript
+var favoriteFoods = "pizza";
+alert(favoriteFoods.length);
+// returns 5
+```
+
+It also accepts methods. Push here will add an item to your array.
+
+```javascript
 var favoriteFoods = ['artichokes', 'bananas', true];
 alert(favoriteFoods);
 favoriteFoods.push('pizza');
 alert(favoriteFoods);
 ```
 
-```bash
+```javascript
 var favoriteFoods = ['artichokes', 'bananas', true, 'pizza'];
 alert(favoriteFoods.includes('marshamallows'));
 \\ will return false
 ```
-**Review**
+
+### Review
 
 * We have an “OBJECT”.
 * Objects contain “PROPERTIES”.  
@@ -104,8 +125,9 @@ alert(favoriteFoods.includes('marshamallows'));
 
 #### Using Square Brackets for Computed Properties
 
-*example -the property name is taken from the variable*
-```bash
+*example - the property name is taken from the variable*
+
+```javascript
 let fruit = prompt("Which fruit to buy?", "apple");
 let bag = {
   [fruit]: 5, 
@@ -115,33 +137,33 @@ alert( bag.apple );
 ```
 
 This is the same as:
-```bash
+```javascript
 let fruit = prompt("Which fruit to buy?", "apple");
 let bag = {};
 bag[fruit] = 5;
 ```
-
+---
 **Exercise 4 - The window object**
 
 What is window? You can find out by using the `typeof` method.
-```bash
+
+```javascript
 console.log(typeof window);
 ```
+
 Answer: window is a JavaScript object.  
+
 To access the properties of window, you use a dot . to specify.
 
 Try out
-
 `alert(window.innerWidth);`
 
 Now try out 
-
 `alert(window.innerHeight);`
-
 
 For example, window also has these properties:
 
 - window.origin which is a string
-- window.scrollY which is a number \\will give you the current scroll position.
+- window.scrollY which is a number this will give you the current scroll position.
 - window.location which is an object
 - window.innerWidth which is a number
