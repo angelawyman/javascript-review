@@ -15,7 +15,8 @@ Module: Arrays
 
 ---
 Further References  
-[Mozilla on Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+- [Mozilla on Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+- [6min video on Methods push, pop, concat, join, reverse, shift, unshift, sort, slice, and splice.](https://www.youtube.com/watch?v=MeZVVxLn26E&app=desktop)
 
 ---
 ## Module: Arrays
@@ -66,24 +67,18 @@ course[2] = "Tagalog";
 //<==now what happens?
 ```
 
-
-*Q.) What is the output of this code?*
-
-```javascript
-var listNew = new Array(3, 6, 8);
-document.write(listNew[1]);
-```
-
 *Q.) What happens when you ask for an array item that doesn't exist?*
 
 ```javascript
+var listNew = [3, 6, 8];
 document.write(listNew[10]);
 // will return undefined
 ```
 
 
 **How else can you create an Array?**
-Note: this is a solo learn example which is old school style.
+Note: this is the solo learn example which is not recommended.   
+DON'T USE NEW ARRAY!!!!!!!!
 
 ```javascript
 var courses = new Array(3);
@@ -91,7 +86,7 @@ var courses = new Array(3);
   courses[1] = "Japanese";
   courses[2] = "Chinese";
 ```
-But, better syntax to do this style:
+Much better syntax to do this way:
 
 ```javascript
 var courses = [ ];
@@ -105,7 +100,7 @@ Or the most common approach, use a literal array:
 `var courses = [ "Korean", "Japanese", "Chinese" ]; `
 ```
 
-How to run through the array
+Example of how to run through the array:
 
 ```javascript
 var courses = ["Korean", "Japanese", "Chinese"];
@@ -134,11 +129,19 @@ for (var i=0; i<x; i++){
 JavaScript's concat() method allows you to join arrays and create an entirely new array.
 
 ```javascript
-var c1 = ["HTML", "CSS"];
-var c2 = ["JS", "C++"];
-var courses = c1.concat(c2);
+var coding1 = ["HTML", "CSS"];
+var coding2 = ["JS", "APIs", "WebGL"];
+var courses = coding1.concat(coding2);
 ```
 
+Use the concat() method to concatenate girls and boys.
+```javascript
+var girls = ["Marlo", "Shilpa", "Katea", "Nazli", "Caroline","Corinna","Joanna"];
+var boys = ["Dmytro", "Dima", "Francesco", "Joseph"];
+var children = girls.concat(boys)
+;
+```
+---
 *Exercise*
 
 *Create a variable, assign it an array of your favorite deserts.
@@ -169,9 +172,17 @@ my_things.forEach(function(item) {
 ---
 ### Associative Arrays
 
+Many programming languages support arrays with named indexes. Arrays with named indexes are called associative arrays (or hashes).
+
+JavaScript does not support arrays with named indexes. In JavaScript, arrays always use numbered indexes. 
+
+You should use objects when you want the element names to be strings (text).
+You should use arrays when you want the element names to be numbers.
+
 You can use the named array syntax, to produce an object.
 Now, person is treated as an object, instead of being an array.
 The named indexes "name" and "age" become properties of the person object. Why might you want to do this?
+
 ```javascript
 var person = []; 
   person["name"] = "John";
@@ -382,3 +393,6 @@ function printTime() {
 setInterval(printTime, 1000);
 ```
 ---
+*Exercise*  
+*Try to complete these:
+[W3Schools Arrays Exercises](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_arrays1)*
