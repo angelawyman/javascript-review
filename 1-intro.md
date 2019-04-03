@@ -236,7 +236,7 @@ Comparison operators — operators that compare values and return true or false.
 
 = One equal sign 'assigns' a value.  
 == Two equal signs is the equality operator. It checks to see if numerical values are equal to one another. It will convert the operands if they are not of the same type, then appluy strict comparison. If both operands are objects, then JavaScript compares internal references which are equal when operands refer to the same object in memory.  
-=== Three equal signs is a comparison and also checks if they are the same type.
+=== Three equal signs is a comparison and also checks if they are the same type. This is called the identity operator.
 
 Comparison operators are used in logical statements to determine equality or difference between variables or values.
 
