@@ -270,11 +270,49 @@ Instead, how would you make this statement evaluate to true?
 
 ---
 ### Conditional Ternary Operator
+Take a look at this if...else statement example:
+
+```javascript
+let dayLight = true;
+
+if (dayLight) {
+  console.log('Drink your coffee!');
+} else {
+  console.log('Go to bed!');
+}
+```
+
+We can rewrite this code block using a ternary operator. A ternary operator takes three arguments. 
+
+```javascript
+dayTime ? console.log('Drink your coffee!') : console.log('Go to bed!');
+```
+
+Things to notice in the example above:
+
+- The condition, dayLight, is followed by a question mark.
+- Following the question mark are two expressions which are separated by a colon.
+- If the condition is true, the ternary operator returns the value of the first expression.
+- Otherwise, it returns the value of the second expression.
+- Just as with like if...else statements, ternary operators will evaluate conditions to true or false.
+
+Here is another example:
 
 ```javascript
 var isAdult = (age < 18) ? "Too young": "Old enough";
 ```
-A ternary operator is an operator that takes three arguments. The arguments and result can be of different types. JavaScript assigns a value to a variable based on some condition and if the condition is true, the ternary operator returns the value of the first expression; otherwise, it returns the value of the second expression.
+Here is an example using a string, and check out that back escaped character!!
+
+```javascript
+let adultAge = 'Legal and Deadly!';
+
+adultAge === 'Legal and Deadly!' ? console.log('I\'m legal and deadly!') : console.log("Someday I will drink");
+```
+
+* Exercise*
+
+*How would you write a variable that asks if it the garbage needs taking out. If it does respond "It's your turn." otherwise write "Can you do the dishes instead?". *
+
 
 ---
 
