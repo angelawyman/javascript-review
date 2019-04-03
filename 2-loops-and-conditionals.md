@@ -1,10 +1,7 @@
 TOC Javascript Modules
 
 
-1. JavaScript Overview
-   - Data Types and Operators    
-   - Naming Variables
-
+1. JavaScript Overview: Data Types, Operators, Variables
 2. CONDITIONALS AND LOOPS   
 3. Functions   
 4. Objects    
@@ -422,6 +419,14 @@ so "sum" will be iterated this way:
 3- sum = 9 + 7 = 16.
 so sum equals 16
 
+---
+### Sidebar: Which values evaluate to false when checked as a condition? 
+The list of false values includes:
+- 0
+- Empty strings like "" or ''
+- null which represent when there is no value at all
+- undefined which represent when a declared variable lacks a value
+- NaN, or Not a Number
 ---
 #### Quiz
 
