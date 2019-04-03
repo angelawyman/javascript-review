@@ -239,7 +239,9 @@ Comparison operators — operators that compare values and return true or false.
 === Three equal signs is a comparison and also checks if they are the same type. This is called the identity operator.
 
 Comparison operators are used in logical statements to determine equality or difference between variables or values.
-
+All comparison statements evaluate to either true or false and are made up of:
+- Two values that will be compared.
+- An operator that separates the values and compares them accordingly (>, <, <=,>=,===).
 
 ```javascript
 5 == 10 false - equal to
