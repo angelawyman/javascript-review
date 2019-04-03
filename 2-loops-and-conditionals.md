@@ -113,6 +113,25 @@ if (userName) {
 userName && logIn (userName) || signUp ();
 ```
 ---
+### Short-Circuit Evaluation
+
+```javascript
+let defaultName;
+if (username) {
+  defaultName = username;
+} else {
+  defaultName = 'New Customer';
+}
+```
+You can use a short-hand for the code above, by employing a logical operator.  Here if you use the || operator in your assignment, JavaScript will assigns the truthy value to the variable. This concept is  referred to as short-circuit evaluation.
+
+```javascript
+let defaultName = username || 'New Customer';
+```
+
+In an or statement the left-hand condition is checked first, then the variable defaultName is assigned the value of username if is truthy, and if it is falsy, it will be assigned the value of 'New Customer'. 
+
+---
 ### The else if statement
 You can use the else if statement to specify a new condition if the first condition is false.
 You can write as many else if statements as you need.
