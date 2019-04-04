@@ -1,17 +1,18 @@
-TOC Javascript Modules
+~ Table of Contents ~
 
-1. JavaScript Overview
-    - Data Types and Operators<br/>  
-    - Naming Variables 
+1. JavaScript Overview, Variables and Datatypes
 2. Conditionals and Loops<br/>   
 3. Functions<br/> 
 4. OBJECTS  
+- [How to create an Object](#how-to-create-an-object)
+- [Dot Notation](#dot-notation)
+- [Review](#review)
 5. Arrays<br/> 
 6. DOM<br/> 
 7. ECMA Script and Resources
 
 
-## Module: Objects
+## Objects
 
 ---
 

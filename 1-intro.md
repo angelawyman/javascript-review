@@ -1,19 +1,35 @@
-TOC Javascript Modules
+~ Table of Contents ~
 
-1. JavaScript Overview
-    - Data Types and Operators<br/>  
-    - Naming Variables 
+1. [JavaScript](#get-started)
+    -  [Commenting](#commenting)
+    - [Summary](#javascript-summary)
+- [Data Types and Operators](#data-types)
+  - [Boolean Operators - True or False Values](#boolean-operators-true-or-false-values)
+  - [Arithmetic Operators](#arithmetic-operators) 
+  - [Assignment Operators](#assignment-operators)
+  - [Relational Comparision Operators](#relational-comparison-operators)
+  - [Logic Operators](#logic-operators)
+  - [Conditional Ternary Operator](#conditional-ternary-operator)
+  - [String Operators](#string-operators-and-concatenation)
+
+ [Big Concept: Variables](#big-concept-variables)
+  -  [Let](#let)
+  -  [Const](#const)
+  -  [Summary](#summary)
+  -  [Exercises: Working with variables](#exercises-working-with-variables)
+
 2. Conditionals and Loops<br/>   
 3. Functions<br/> 
 4. Objects<br/>  
 5. Arrays<br/> 
-6. DOM<br/> 
-7. ECMA Script and Resources
+6. Math Object and Generators
+7. DOM<br/> 
+8. ECMA Script and Resources
 
 ---
-# JavaScript Review
+# JavaScript
 
-## Module / JavaScript Overview
+## Get Started
 We use JavaScript to make a site more dynamic and interactive. Among such features might be slide carousels, a lightbox gallery, an icon to scroll to top, among others. 
 - Auto-update social media content, like twitter or facebook feed 🐦
 - Animate visual elements 🐈
@@ -69,7 +85,7 @@ For longer pages of code link to an external created custom script file in the h
 ---
 
 
-## JavaScript Basics
+## JavaScript Summary
 
 `alert("This is an alert box!");`
 
@@ -93,7 +109,7 @@ You can also format the text with HTML.
 ```
 ---
 
-**Q4.)  Which choice can be added within the text to be displayed?**     
+**Q4.) Which choice can be added within the text to be displayed?**     
 A. Formatting tags     
 B. JavaScript commands   
 C. Folders  
@@ -132,15 +148,12 @@ C. **this is a comment**
 D. %%this is a comment
 ```
 ---
-## Module / Basic Concepts
-
-- Data Types
-  * Math Operators 
-  * Assignment Operators
-  * Comparision Operators
-  * Boolean Operators
-  * String Operators
-- Variables
+## Data Types
+  - Boolean Operators
+  - Math Operators 
+  - Assignment Operators
+  - Comparision Operators
+  - String Operators
 ---
 
 ## The Various Data Types
@@ -177,7 +190,8 @@ var sayHello = 'Hello world! \'I am a JavaScript programmer.\' ';
 document.write(sayHello);
 ```
 ---
-### Booleans - True or False Values
+### Boolean Operators:  True or False Values
+
 The Boolean value of 0 (zero), null, undefined, empty string returns false. Everything with a "real" value is true.
 ```javascript
 10 = 5 + 5;
@@ -285,7 +299,7 @@ if (dayLight) {
 We can rewrite this code block using a ternary operator. A ternary operator takes three arguments. 
 
 ```javascript
-dayTime ? console.log('Drink your coffee!') : console.log('Go to bed!');
+dayTime ? console.log('I made coffee!') : console.log('Go to bed!');
 ```
 
 Things to notice in the example above:
@@ -393,16 +407,16 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_gramma
 
 *examples of incorrect variable names*
 ```javascript
-let my favorite_cat; 
+var my favorite_cat; 
 //<== can't have a space  
 
-let 1market; 
+var 1market; 
 // can't start with a number   
 
-let my-proper-name; 
+var my-proper-name; 
 //<== hyphens aren't allowed as they are used for subtraction 
 
-let bartle&james; 
+var bartle&james; 
 //<== can't use comparision or mathmatical operators 
 ```
 
@@ -410,6 +424,7 @@ let bartle&james;
 ## Introducing Two New Kinds of Variables in ECMA Script 6
 JavaScript now has two additional ways to declare variables: let and const.
 
+###### VARIABLES
 #### let
 let is the successor to var. Although var is still available, let limits the scope of variables to the block (rather than the function inside the block) they’re declared within.
 
@@ -434,7 +449,7 @@ for (let j = 1; j < 5; j++)
 console.log(j);
 // this won't work as j is not defined
 ```
-
+###### VARIABLES
 #### const
 
 Using const allows you to define a variables that cannot be changed to new values. A const can’t be declared without a value, unlike a var or a let variable.

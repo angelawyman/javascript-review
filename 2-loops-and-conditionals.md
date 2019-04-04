@@ -1,11 +1,24 @@
-TOC Javascript Modules
+~ Table of Contents ~
 
+1. JavaScript Overview, Variables and Datatypes
+2. [CONDITIONALS AND LOOPS](#conditionals-and-loops) 
+  [Conditionals](#conditionals)
+  - [the if statement](#the-if-statement)
+  - [the else statement](#the-else-statement)
+  - [the else if statement](#the-else-if-statement)
+  - [the switch statement](#the-switch-statement)
+  - [the break keyword](#the-break-keyword) 
+  - [the default keyword](#the-default-keyword)
 
-1. JavaScript Overview
-   - Data Types and Operators    
-   - Naming Variables
+[Loops](#loops)
+  - [the for loop](#the-for-loop)
+  - [the while loop](#the-while-loop)
+  - [the do while loop](#the-do-while-loop)
+  - [the break keyword](#the-break-keyword)
+  - [the continue keyword](#the-continue-keyword)
 
-2. CONDITIONALS AND LOOPS   
+  [Quiz](#quiz)
+
 3. Functions   
 4. Objects    
 5. Arrays   
@@ -15,7 +28,7 @@ TOC Javascript Modules
 
 ---
 
-## Module: Conditionals and Loops
+## Conditionals and Loops
 
 ---
 
@@ -51,6 +64,7 @@ if (window.location.hostname != 'google.com') {
 }
 ```
 ---
+###### CONDITIONAL STATEMENTS
 ### The else statement
 
 
@@ -77,7 +91,6 @@ else {
    alert("This is my second condition");
 }
 ```
-
 
 ```javascript
 * example *
@@ -116,9 +129,12 @@ if (userName) {
 userName && logIn (userName) || signUp ();
 ```
 ---
+###### CONDITIONAL STATEMENTS
 ### The else if statement
-You can use the else if statement to specify a new condition if the first condition is false.
-You can write as many else if statements as you need.
+- You can use the else if statement to specify a new condition if the first condition is false.
+- The else if statement always comes after the if statement and before the else statement. 
+- You can write as many else if statements as you need.
+- Statements are read from top to bottom, so the first condition that evaluates to true is the block that will get executed.
 
 ```javascript
 var course = 1;
@@ -128,6 +144,20 @@ if (course == 1) {
    document.write("<h1>CSS Tutorial</h1>");
 } else {
    document.write("<h1>JavaScript Tutorial</h1>");
+}
+```
+
+```javascript
+let stopLight = 'yellow';
+
+if (stopLight === 'red') {
+  console.log('Stop!');
+} else if (stopLight === 'yellow') {
+  console.log('Slow down...');
+} else if (stopLight === 'green') {
+  console.log('Go!');
+} else {
+  console.log('Proceed with caution!');
 }
 ```
 
@@ -146,12 +176,8 @@ else {
 }
 ```
 ---
-### Switch statement
-
-In cases when you need to test for multiple conditions, writing if else statements for each condition might not be the best solution. 
-
-The switch statement is used to perform different actions based on different conditions. The switch expression is evaluated once. The value of the expression is compared with the values of each case. If there is a match, the associated block of code is executed. You can have as many case statements as needed.
-
+###### CONDITIONAL STATEMENTS
+### The Switch statement
 
 ```javascript
 * syntax *
@@ -167,6 +193,44 @@ switch (expression) {
      statements
 }
 ```
+
+In cases where you need to test for multiple conditions, writing if else statements for each condition while valid might be laborious. For instance, we have a series of conditions checking for a value that matches a variable. If else statements will work fine, but if you have over 100 different values then this markup will be demanding. A switch statment provides an easier syntax. 
+
+- The switch statement is used to perform different actions based on different conditions. The switch expression is evaluated once. The value of each expression is compared with the values of each case. If they match, the associated block of code is executed. 
+- You can have as many case statements as needed.
+
+A switch statement looks like this:
+
+```javascript
+let dessertPreparation = 'rice pudding';
+
+switch (dessertPreparation) {
+  case 'cookies':
+    console.log('You will need an oven.');
+    break;
+  case 'lemon bars':
+    console.log('You will need a fridge.');
+    break;
+  case 'rice pudding':
+    console.log('You will need a stovetop.');
+    break;
+  default:
+    console.log('Check your recipe for further details.');
+    break;
+}
+// Prints 'You will need a stovetop.'
+```
+
+1. Inside the code block, there are multiple cases. The case keyword checks if each expression matches the value that comes after it. The first value is 'cookies'. If the value of dessertPreparation equals 'cookies', then that case‘s console.log would run.
+
+2.  Here, the value of dessertPreparation is 'rice pudding', so the third case runs— 'You will need a stovetop.' will then be logged to the console.
+
+3. The **break** keyword tells the computer to exit the block and not execute any more code or check any other cases inside the code block. 
+
+4. If there isn't a **break** keyword then the program would execute the code for all the matching cases and the default code as well. This behavior is different from if/else conditional statements which will execute only one block of code.
+
+5. At the end of each switch statement, always include a **default** statement. If none of the cases are true, the code in the **default** statement will then run.
+
 
 ```javascript
 * example *
@@ -188,7 +252,7 @@ switch (day) {
 /* outputs "Tuesday" */
 ```
 ---
-
+###### CONDITIONAL STATEMENTS
 #### The break Keyword
 
 When JavaScript code reaches a break keyword, it breaks out of the switch block. This will stop the execution of more code and case testing inside the block. Usually, a break should be put in each case statement.
@@ -217,7 +281,7 @@ switch (x) {
 - The default will execute: The document will write x + 5 (3 + 5), which is 8.
 
 ---
-
+###### CONDITIONAL STATEMENTS
 #### The default Keyword
 
 The default keyword specifies the code to run if there is no case match.
@@ -244,17 +308,35 @@ switch(color) {
 }
 //outputs "Color not found."
 ```
+
+### Summary on Conditional Statements
+
+Here are some of the major concepts for conditionals:
+
+- An if statement checks a condition and will execute a task if that condition evaluates to true.
+- if...else statements make binary decisions and execute different code blocks based on a provided condition.
+- We can add more conditions using else if statements.
+- Comparison operators, including <, >, <=, >=, ===, and !== can compare two values.
+- The logical and operator, &&, or “and”, checks if both provided expressions are truthy.
+- The logical operator ||, or “or”, checks if either provided expression is truthy.
+- The bang operator, !, switches the truthiness and falsiness of a value.
+- The ternary operator is shorthand to simplify concise if...else statements.
+- A switch statement can be used to simplify the process of writing multiple else if statements. The break keyword stops the remaining cases from being checked and executed in a switch statement.
+
+
+
+
 ---
 ## Loops
+
 Loops can execute a block of code a number of times. They are handy in cases in which you want to run the same code repeatedly, adding a different value each time.
 
 JavaScript has three types of loops: for, while, and do while. 
 ES6 introduces other for loop types; you can learn about them in the ES6 course later.
 
 ---
+###### LOOP STATEMENTS
 ### The for loop
-
-
 
 ```javascript
 * syntax *
@@ -299,6 +381,7 @@ for (k=1; k<10; k++){
 }
 ```
 ---
+###### LOOP STATEMENTS
 ### The while loop
 
 
@@ -334,7 +417,8 @@ var x=1;
 Be sure to be careful when writing conditions. If a condition is always true, the loop will run forever.
 
 ---
-### The Do...While Loop
+###### LOOP STATEMENTS
+### The Do While Loop
 
 The do...while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, and then it will repeat the loop as long as the condition is true. 
 The loop will always be executed at least once, even if the condition is false, because the code block is executed before the condition is tested.
@@ -370,7 +454,7 @@ do {
 while (count<=10);
 ```
 ---
-### **Break**
+### **The Break Keyword**
 
 The break statement "jumps out" of a loop and continues executing the code after the loop. You can use the return keyword to return some value immediately from the loop inside of a function. This will also break the loop.
 
@@ -383,7 +467,8 @@ for (i = 0; i <= 10; i++) {
 }
 ```
 ---
-### **Continue**
+###### LOOP STATEMENTS
+### **The Continue Keyword**
 
 The continue statement breaks only one iteration in the loop, and continues with the next iteration.
 

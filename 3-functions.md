@@ -2,7 +2,7 @@
 
 1. JavaScript Overview, Variables and Datatypes
 2. Conditionals and Loops     
-3. [JavaScript Functions](#javascript-functions)  
+3. [JavaScript FUNCTIONS](#javascript-functions)  
 - [How to Create a Function](#how-to-create-a-function)
 - [How to Call a Function](#how-to-call-a-function)
 - [Function Parameters](#function-parameters)
