@@ -32,7 +32,7 @@ The Math object allows you to perform mathematical tasks, and includes over 30 p
 * Max Returns the number with the highest value.
 * Min Returns the number with the lowest value.
 
-JavaScript includes a Math object that has a number of methods.
+JavaScript includes a Math object that has a number of methods, remember a method is basically a function stored as a property.
 You can access any of the Math object's methods following this syntax: ```Math.methodName();```
 
 We will be covering these following methods while looking to build random generators.

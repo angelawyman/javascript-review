@@ -1,4 +1,5 @@
     // SoloLearn examples 👻
+```javascript
 function change_elem(){
         var x = ["java","css","c++","php"];
      x[0] = "html";
@@ -704,3 +705,95 @@ function from_test(){
      fir.innerHTML = x;
     }
     }
+    ```
+---
+### More function examples
+    let runTime = 35;
+let runDistance = 3.5;
+
+if (runTime <= 30 && runDistance > 3.5) {
+  console.log("You're super fast!");
+} else if (runTime >= 30 && runDistance <= 3) {
+  console.log("You're not making your pace!");
+} else if (runTime > 30 || runDistance > 3) {
+  console.log("Nice workout!"); 
+} else {
+  console.log("Keep on running!");
+}
+
+### 2. examples
+
+let weather = "spring";
+let clothingChoice = "";
+
+if (weather === "spring") {
+  clothingChoice = "Put on rain boots.";
+} else if (weather === "summer") {
+  clothingChoice = "Make sure to take your sunscreen.";
+} else if (weather === "fall") {
+  clothingChoice = "Wear a light jacket.";
+} else if (weather === 'winter') {
+  clothingChoice = "Wear a heavy coat.";
+} else {
+  console.log('Invalid weather type.');
+};
+console.log(clothingChoice);
+
+### examples
+let needTacos = true;
+
+if (needTacos) {
+    console.log("Finding tacos");
+} else {
+    console.log("Keep on keeping on!");
+}
+
+*Question: what will this evaluate to?*
+
+
+
+let groceryItem = "apple";
+
+switch (groceryItem) {
+  case "tomato":
+    console.log("Tomatoes are $0.49");
+    break;
+  case "lime":
+    console.log("Limes are $1.49");
+    break;
+  case "papaya":
+    console.log("Papayas are $1.29");
+    break;
+  default:
+    console.log("Invalid item");
+    break;
+}
+
+
+functions using return
+
+FUNCTIONS
+Helper Functions
+We can also use the return value of a function inside another function. These functions being called within another function are often referred to as helper functions. Since each function is carrying out a specific task, it makes our code easier to read and debug if necessary.
+
+If we wanted to define a function that converts the temperature from Celsius to Fahrenheit, we could write two functions like:
+
+function multiplyByNineFifths(number) {
+  return number * (9/5);
+};
+
+function getFahrenheit(celsius) {
+  return multiplyByNineFifths(celsius) + 32;
+};
+
+getFahrenheit(15); // Returns 59
+In the example above:
+
+getFahrenheit() is called and 15 is passed as an argument.
+The code block inside of getFahrenheit() calls multiplyByNineFifths() and passes 15 as an argument.
+multiplyByNineFifths() takes the argument of 15 for the number parameter.
+The code block inside of multiplyByNineFifths() function multiplies 15 by (9/5), which evaluates to 27.
+27 is returned back to the function call in getFahrenheit().
+getFahrenheit() continues to execute. It adds 32 to 27, which evaluates to 59.
+Finally, 59 is returned back to the function call getFahrenheit(15).
+We can use functions to section off small bits of logic or tasks, then use them when we need to. Writing helper functions can help take large and difficult tasks and break them into smaller and more manageable tasks.
