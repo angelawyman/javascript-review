@@ -29,7 +29,6 @@ if (condition) {
 }
 ```
 
-
 ```javascript
 * example *
 
@@ -133,6 +132,7 @@ In an or statement the left-hand condition is checked first, then the variable d
 
 ---
 ### The else if statement
+
 You can use the else if statement to specify a new condition if the first condition is false.
 You can write as many else if statements as you need.
 
