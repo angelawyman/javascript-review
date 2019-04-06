@@ -167,3 +167,4 @@ For example, window also has these properties:
 - window.scrollY which is a number this will give you the current scroll position.
 - window.location which is an object
 - window.innerWidth which is a number
+🔆
