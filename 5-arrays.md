@@ -1,7 +1,6 @@
 ~ Table of Contents ~
 
-
-Module: Arrays   
+Arrays   
 - [Using Array Literals](#using-array-literals)
 - [Indexing Arrays](#indexing-arrays)
 - [Concatenation with Arrays](#concatenation-with-arrays)
@@ -10,16 +9,13 @@ Module: Arrays
 - [Extra Credit! Lots More Methods](#extra-credit-lots-more-methods)
 
 
-[The Math Object](#the-math-object)  
-[The Date Object](#the-date-object)  
-
 ---
 Further References  
 - [Mozilla on Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 - [6min video on Methods push, pop, concat, join, reverse, shift, unshift, sort, slice, and splice.](https://www.youtube.com/watch?v=MeZVVxLn26E&app=desktop)
 
 ---
-## Module: Arrays
+## Arrays
 
 Arrays store multiple values in a single variable. To store three names, you need three variables.
 
@@ -354,45 +350,9 @@ var y = x.sort();
 var z = x.reverse();
 ```
 ---
-## The Math Object
-
-The Math object allows you to perform mathematical tasks, and includes several properties.
-
-* E Euler's Constant
-* PI value of pi
-* LN2 Natural log of the value 2
-* LN10 Natural log of the value 10
-* LOG2E The base 2 log of Euler's constant
-* LOG10E The base 10 log of Euler's constant
-
-```javascript
-document.write(Math.PI);
-// outputs 3.141592653589793
-```
-
-The Math object contains a number of methods that are used for calculations:
-
----
-## The Date Object
-
-When a Date object is created, a number of methods make it possible to perform operations on it.
-
-```javascript
-var d = new Date();
-var hours = d.getHours();
-//hours is equal to the current hour
-```
-```javascript
-function printTime() {
-  var d = new Date();
-  var hours = d.getHours();
-  var mins = d.getMinutes();
-  var secs = d.getSeconds();
-  document.body.innerHTML = hours+":"+mins+":"+secs;
-}
-setInterval(printTime, 1000);
-```
----
 *Exercise*  
+*Try to complete these:
+[W3Schools Arrays Exercises](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_arrays1)*
+🔆
 *Try to complete these:
 [W3Schools Arrays Exercises](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_arrays1)*
