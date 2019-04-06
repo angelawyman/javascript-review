@@ -353,3 +353,6 @@ var z = x.reverse();
 *Exercise*  
 *Try to complete these:
 [W3Schools Arrays Exercises](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_arrays1)*
+🔆
+*Try to complete these:
+[W3Schools Arrays Exercises](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_arrays1)*
