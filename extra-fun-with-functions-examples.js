@@ -1,5 +1,27 @@
-    // not this one SoloLearn examples 
+    // examples 👍🏻
 
+    length_prop, 
+    to String, 
+    join, 
+    pop, 
+    pushing, 
+    shift, 
+    unshift, 
+    delete element, 
+    splice, 
+    splice remove , 
+    sort reverse, 
+    min max, 
+    number reverse, 
+    concat, 
+    slice, 
+    value, 
+    last index of, 
+    calculate squareList, 
+    need to ReorderInv1, 
+    for forEach, 
+
+    
 function change_elem(){
         var x = ["java","css","c++","php"];
      x[0] = "html";

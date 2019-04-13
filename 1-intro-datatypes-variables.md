@@ -64,6 +64,7 @@ Don't do this!!
 ```
 ***
 
+## Adding Your Scripts to the Document
 ## Where is the "script" tag typically placed?
 Inside the head section between `<script>` and `</script>`
 
